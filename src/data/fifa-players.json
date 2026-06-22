@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "p_21",
+    "name": "M. Salah",
+    "position": "RM",
+    "number": "11",
+    "team": "Egypt",
+    "rating": 91
+  },
+  {
+    "id": "p_52",
+    "name": "K. Mbappé",
+    "position": "ST",
+    "number": "10",
+    "team": "France",
+    "rating": 91
+  },
+  {
+    "id": "p_33",
+    "name": "O. Dembélé",
+    "position": "ST",
+    "number": "10",
+    "team": "France",
+    "rating": 90
+  },
+  {
+    "id": "p_246",
+    "name": "V. van Dijk",
+    "position": "CB",
+    "number": "4",
+    "team": "Netherlands",
+    "rating": 90
+  },
+  {
+    "id": "p_110",
+    "name": "E. Haaland",
+    "position": "ST",
+    "number": "9",
+    "team": "Norway",
+    "rating": 90
+  },
+  {
+    "id": "p_0",
+    "name": "J. Bellingham",
+    "position": "CAM",
+    "number": "5",
+    "team": "England",
+    "rating": 90
+  },
+  {
+    "id": "p_8",
+    "name": "Rodri",
+    "position": "CDM",
+    "number": "16",
+    "team": "Spain",
+    "rating": 90
+  },
+  {
+    "id": "p_20",
+    "name": "Vitinha",
+    "position": "CM",
+    "number": "17",
+    "team": "Portugal",
+    "rating": 89
+  },
+  {
+    "id": "p_58",
+    "name": "H. Kane",
+    "position": "ST",
+    "number": "9",
+    "team": "England",
+    "rating": 89
+  },
+  {
+    "id": "p_15312",
+    "name": "G. Donnarumma",
+    "position": "GK",
+    "number": "25",
+    "team": "Italy",
+    "rating": 89
+  },
+  {
+    "id": "p_13606",
+    "name": "Alisson",
+    "position": "GK",
+    "number": "1",
+    "team": "Brazil",
+    "rating": 89
+  },
+  {
+    "id": "p_1104",
+    "name": "Lamine Yamal",
+    "position": "RM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 89
+  },
+  {
+    "id": "p_459",
+    "name": "Vini Jr.",
+    "position": "LW",
+    "number": "7",
+    "team": "Brazil",
+    "rating": 89
+  },
+  {
+    "id": "p_2",
+    "name": "J. Kimmich",
+    "position": "CDM",
+    "number": "6",
+    "team": "Germany",
+    "rating": 89
+  },
+  {
+    "id": "p_28",
+    "name": "Raphinha",
+    "position": "LM",
+    "number": "11",
+    "team": "Brazil",
+    "rating": 89
+  },
+  {
+    "id": "p_15635",
+    "name": "T. Courtois",
+    "position": "GK",
+    "number": "1",
+    "team": "Belgium",
+    "rating": 89
+  },
+  {
+    "id": "p_3",
+    "name": "A. Hakimi",
+    "position": "RB",
+    "number": "2",
+    "team": "Morocco",
+    "rating": 89
+  },
+  {
+    "id": "p_31",
+    "name": "Pedri",
+    "position": "CM",
+    "number": "8",
+    "team": "Spain",
+    "rating": 89
+  },
+  {
+    "id": "p_86",
+    "name": "F. Wirtz",
+    "position": "CAM",
+    "number": "7",
+    "team": "Germany",
+    "rating": 89
+  },
+  {
+    "id": "p_1",
+    "name": "F. Valverde",
+    "position": "CM",
+    "number": "8",
+    "team": "Uruguay",
+    "rating": 89
+  },
+  {
+    "id": "p_36",
+    "name": "L. Martínez",
+    "position": "ST",
+    "number": "10",
+    "team": "Argentina",
+    "rating": 88
+  },
+  {
+    "id": "p_311",
+    "name": "A. Isak",
+    "position": "ST",
+    "number": "9",
+    "team": "Sweden",
+    "rating": 88
+  },
+  {
+    "id": "p_2414",
+    "name": "Gabriel",
+    "position": "CB",
+    "number": "6",
+    "team": "Brazil",
+    "rating": 88
+  },
+  {
+    "id": "p_70",
+    "name": "R. Lewandowski",
+    "position": "ST",
+    "number": "9",
+    "team": "Poland",
+    "rating": 88
+  },
+  {
+    "id": "p_15010",
+    "name": "J. Oblak",
+    "position": "GK",
+    "number": "13",
+    "team": "Slovenia",
+    "rating": 88
+  },
+  {
+    "id": "p_76",
+    "name": "J. Musiala",
+    "position": "CAM",
+    "number": "10",
+    "team": "Germany",
+    "rating": 88
+  },
+  {
+    "id": "p_29",
+    "name": "B. Saka",
+    "position": "RW",
+    "number": "7",
+    "team": "England",
+    "rating": 88
+  },
+  {
+    "id": "p_371",
+    "name": "Marquinhos",
+    "position": "CB",
+    "number": "5",
+    "team": "Brazil",
+    "rating": 87
+  },
+  {
+    "id": "p_1937",
+    "name": "W. Saliba",
+    "position": "CB",
+    "number": "2",
+    "team": "France",
+    "rating": 87
+  },
+  {
+    "id": "p_4",
+    "name": "N. Barella",
+    "position": "CM",
+    "number": "23",
+    "team": "Italy",
+    "rating": 87
+  },
+  {
+    "id": "p_7",
+    "name": "A. Mac Allister",
+    "position": "CM",
+    "number": "10",
+    "team": "Argentina",
+    "rating": 87
+  },
+  {
+    "id": "p_23",
+    "name": "D. Rice",
+    "position": "CDM",
+    "number": "41",
+    "team": "England",
+    "rating": 87
+  },
+  {
+    "id": "p_53",
+    "name": "M. Ødegaard",
+    "position": "CM",
+    "number": "8",
+    "team": "Norway",
+    "rating": 87
+  },
+  {
+    "id": "p_15002",
+    "name": "Y. Sommer",
+    "position": "GK",
+    "number": "1",
+    "team": "Switzerland",
+    "rating": 87
+  },
+  {
+    "id": "p_343",
+    "name": "V. Osimhen",
+    "position": "ST",
+    "number": "45",
+    "team": "Nigeria",
+    "rating": 87
+  },
+  {
+    "id": "p_137",
+    "name": "S. Guirassy",
+    "position": "ST",
+    "number": "9",
+    "team": "Guinea",
+    "rating": 87
+  },
+  {
+    "id": "p_624",
+    "name": "A. Bastoni",
+    "position": "CB",
+    "number": "95",
+    "team": "Italy",
+    "rating": 87
+  },
+  {
+    "id": "p_432",
+    "name": "J. Koundé",
+    "position": "RB",
+    "number": "23",
+    "team": "France",
+    "rating": 87
+  },
+  {
+    "id": "p_13866",
+    "name": "David Raya",
+    "position": "GK",
+    "number": "1",
+    "team": "Spain",
+    "rating": 87
+  },
+  {
+    "id": "p_4426",
+    "name": "J. Tah",
+    "position": "CB",
+    "number": "4",
+    "team": "Germany",
+    "rating": 87
+  },
+  {
+    "id": "p_11122",
+    "name": "M. Maignan",
+    "position": "GK",
+    "number": "16",
+    "team": "France",
+    "rating": 87
+  },
+  {
+    "id": "p_40",
+    "name": "K. Kvaratskhelia",
+    "position": "LW",
+    "number": "7",
+    "team": "Georgia",
+    "rating": 87
+  },
+  {
+    "id": "p_38",
+    "name": "K. De Bruyne",
+    "position": "CM",
+    "number": "11",
+    "team": "Belgium",
+    "rating": 87
+  },
+  {
+    "id": "p_101",
+    "name": "M. Caicedo",
+    "position": "CDM",
+    "number": "25",
+    "team": "Ecuador",
+    "rating": 87
+  },
+  {
+    "id": "p_125",
+    "name": "C. Palmer",
+    "position": "CAM",
+    "number": "10",
+    "team": "England",
+    "rating": 87
+  },
+  {
+    "id": "p_158",
+    "name": "V. Gyökeres",
+    "position": "ST",
+    "number": "14",
+    "team": "Sweden",
+    "rating": 87
+  },
+  {
+    "id": "p_25",
+    "name": "F. de Jong",
+    "position": "CM",
+    "number": "21",
+    "team": "Netherlands",
+    "rating": 87
+  },
+  {
+    "id": "p_11",
+    "name": "Bruno Fernandes",
+    "position": "CAM",
+    "number": "8",
+    "team": "Portugal",
+    "rating": 87
+  },
+  {
+    "id": "p_12",
+    "name": "J. Alvarez",
+    "position": "ST",
+    "number": "19",
+    "team": "Argentina",
+    "rating": 87
+  },
+  {
+    "id": "p_32",
+    "name": "Bruno Guimarães",
+    "position": "CM",
+    "number": "39",
+    "team": "Brazil",
+    "rating": 86
+  },
+  {
+    "id": "p_26",
+    "name": "T. Reijnders",
+    "position": "CM",
+    "number": "4",
+    "team": "Netherlands",
+    "rating": 86
+  },
+  {
+    "id": "p_5",
+    "name": "H. Çalhanoğlu",
+    "position": "CDM",
+    "number": "20",
+    "team": "Türkiye",
+    "rating": 86
+  },
+  {
+    "id": "p_69",
+    "name": "Nuno Mendes",
+    "position": "LB",
+    "number": "25",
+    "team": "Portugal",
+    "rating": 86
+  },
+  {
+    "id": "p_166",
+    "name": "P. Dybala",
+    "position": "CAM",
+    "number": "21",
+    "team": "Argentina",
+    "rating": 86
+  },
+  {
+    "id": "p_16282",
+    "name": "G. Kobel",
+    "position": "GK",
+    "number": "1",
+    "team": "Switzerland",
+    "rating": 86
+  },
+  {
+    "id": "p_601",
+    "name": "A. Rüdiger",
+    "position": "CB",
+    "number": "22",
+    "team": "Germany",
+    "rating": 86
+  },
+  {
+    "id": "p_240",
+    "name": "L. Messi",
+    "position": "RW",
+    "number": "10",
+    "team": "Argentina",
+    "rating": 86
+  },
+  {
+    "id": "p_13",
+    "name": "T. Alexander-Arnold",
+    "position": "RB",
+    "number": "12",
+    "team": "England",
+    "rating": 86
+  },
+  {
+    "id": "p_17",
+    "name": "S. Tonali",
+    "position": "CDM",
+    "number": "8",
+    "team": "Italy",
+    "rating": 86
+  },
+  {
+    "id": "p_3143",
+    "name": "W. Pacho",
+    "position": "CB",
+    "number": "51",
+    "team": "Ecuador",
+    "rating": 86
+  },
+  {
+    "id": "p_202",
+    "name": "M. Olise",
+    "position": "RM",
+    "number": "17",
+    "team": "France",
+    "rating": 86
+  },
+  {
+    "id": "p_2398",
+    "name": "Rúben Dias",
+    "position": "CB",
+    "number": "3",
+    "team": "Portugal",
+    "rating": 86
+  },
+  {
+    "id": "p_453",
+    "name": "Nico Williams",
+    "position": "LM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 86
+  },
+  {
+    "id": "p_14425",
+    "name": "M. ter Stegen",
+    "position": "GK",
+    "number": "1",
+    "team": "Germany",
+    "rating": 86
+  },
+  {
+    "id": "p_3342",
+    "name": "I. Konaté",
+    "position": "CB",
+    "number": "5",
+    "team": "France",
+    "rating": 86
+  },
+  {
+    "id": "p_428",
+    "name": "Iñigo Martínez",
+    "position": "CB",
+    "number": "26",
+    "team": "Spain",
+    "rating": 85
+  },
+  {
+    "id": "p_6",
+    "name": "F. Dimarco",
+    "position": "LB",
+    "number": "32",
+    "team": "Italy",
+    "rating": 85
+  },
+  {
+    "id": "p_15924",
+    "name": "P. Gulácsi",
+    "position": "GK",
+    "number": "1",
+    "team": "Hungary",
+    "rating": 85
+  },
+  {
+    "id": "p_57",
+    "name": "S. McTominay",
+    "position": "CM",
+    "number": "8",
+    "team": "Scotland",
+    "rating": 85
+  },
+  {
+    "id": "p_9",
+    "name": "A. Griezmann",
+    "position": "ST",
+    "number": "7",
+    "team": "France",
+    "rating": 85
+  },
+  {
+    "id": "p_182",
+    "name": "L. Díaz",
+    "position": "LM",
+    "number": "14",
+    "team": "Colombia",
+    "rating": 85
+  },
+  {
+    "id": "p_378",
+    "name": "Dani Olmo",
+    "position": "CAM",
+    "number": "20",
+    "team": "Spain",
+    "rating": 85
+  },
+  {
+    "id": "p_34",
+    "name": "João Neves",
+    "position": "CM",
+    "number": "87",
+    "team": "Portugal",
+    "rating": 85
+  },
+  {
+    "id": "p_292",
+    "name": "Cristiano Ronaldo",
+    "position": "ST",
+    "number": "7",
+    "team": "Portugal",
+    "rating": 85
+  },
+  {
+    "id": "p_177",
+    "name": "H. Son",
+    "position": "LW",
+    "number": "7",
+    "team": "Korea Republic",
+    "rating": 85
+  },
+  {
+    "id": "p_239",
+    "name": "N. Schlotterbeck",
+    "position": "CB",
+    "number": "4",
+    "team": "Germany",
+    "rating": 85
+  },
+  {
+    "id": "p_582",
+    "name": "Rodrygo",
+    "position": "RW",
+    "number": "11",
+    "team": "Brazil",
+    "rating": 85
+  },
+  {
+    "id": "p_178",
+    "name": "N. Kanté",
+    "position": "CDM",
+    "number": "7",
+    "team": "France",
+    "rating": 85
+  },
+  {
+    "id": "p_165",
+    "name": "G. Xhaka",
+    "position": "CDM",
+    "number": "34",
+    "team": "Switzerland",
+    "rating": 85
+  },
+  {
+    "id": "p_2095",
+    "name": "D. Upamecano",
+    "position": "CB",
+    "number": "2",
+    "team": "France",
+    "rating": 85
+  },
+  {
+    "id": "p_35",
+    "name": "R. Gravenberch",
+    "position": "CDM",
+    "number": "38",
+    "team": "Netherlands",
+    "rating": 85
+  },
+  {
+    "id": "p_15843",
+    "name": "Unai Simón",
+    "position": "GK",
+    "number": "1",
+    "team": "Spain",
+    "rating": 85
+  },
+  {
+    "id": "p_320",
+    "name": "K. Benzema",
+    "position": "ST",
+    "number": "9",
+    "team": "France",
+    "rating": 85
+  },
+  {
+    "id": "p_16154",
+    "name": "De Gea",
+    "position": "GK",
+    "number": "43",
+    "team": "Spain",
+    "rating": 85
+  },
+  {
+    "id": "p_120",
+    "name": "Carvajal",
+    "position": "RB",
+    "number": "2",
+    "team": "Spain",
+    "rating": 85
+  },
+  {
+    "id": "p_2137",
+    "name": "Bremer",
+    "position": "CB",
+    "number": "3",
+    "team": "Brazil",
+    "rating": 85
+  },
+  {
+    "id": "p_11893",
+    "name": "E. Martínez",
+    "position": "GK",
+    "number": "23",
+    "team": "Argentina",
+    "rating": 85
+  },
+  {
+    "id": "p_155",
+    "name": "D. Doué",
+    "position": "RW",
+    "number": "14",
+    "team": "France",
+    "rating": 85
+  },
+  {
+    "id": "p_9382",
+    "name": "Ederson",
+    "position": "GK",
+    "number": "31",
+    "team": "Brazil",
+    "rating": 85
+  },
+  {
+    "id": "p_74",
+    "name": "Y. Tielemans",
+    "position": "CM",
+    "number": "8",
+    "team": "Belgium",
+    "rating": 85
+  },
+  {
+    "id": "p_73",
+    "name": "B. Mbeumo",
+    "position": "RW",
+    "number": "19",
+    "team": "Cameroon",
+    "rating": 85
+  },
+  {
+    "id": "p_778",
+    "name": "P. Schick",
+    "position": "ST",
+    "number": "14",
+    "team": "Czechia",
+    "rating": 85
+  },
+  {
+    "id": "p_144",
+    "name": "Fabián Ruiz",
+    "position": "CM",
+    "number": "8",
+    "team": "Spain",
+    "rating": 85
+  },
+  {
+    "id": "p_188",
+    "name": "P. Foden",
+    "position": "RW",
+    "number": "47",
+    "team": "England",
+    "rating": 85
+  },
+  {
+    "id": "p_156",
+    "name": "M. Thuram",
+    "position": "ST",
+    "number": "9",
+    "team": "France",
+    "rating": 85
+  },
+  {
+    "id": "p_735",
+    "name": "B. Barcola",
+    "position": "LW",
+    "number": "29",
+    "team": "France",
+    "rating": 84
+  },
+  {
+    "id": "p_30",
+    "name": "S. Milinković-Savić",
+    "position": "CM",
+    "number": "22",
+    "team": "Serbia",
+    "rating": 84
+  },
+  {
+    "id": "p_10",
+    "name": "T. Hernández",
+    "position": "LB",
+    "number": "19",
+    "team": "France",
+    "rating": 84
+  },
+  {
+    "id": "p_163",
+    "name": "X. Simons",
+    "position": "CAM",
+    "number": "7",
+    "team": "Netherlands",
+    "rating": 84
+  },
+  {
+    "id": "p_85",
+    "name": "Bernardo Silva",
+    "position": "CM",
+    "number": "20",
+    "team": "Portugal",
+    "rating": 84
+  },
+  {
+    "id": "p_15510",
+    "name": "W. Szczęsny",
+    "position": "GK",
+    "number": "25",
+    "team": "Poland",
+    "rating": 84
+  },
+  {
+    "id": "p_18",
+    "name": "Marcos Llorente",
+    "position": "RB",
+    "number": "14",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_46",
+    "name": "E. Fernández",
+    "position": "CM",
+    "number": "8",
+    "team": "Argentina",
+    "rating": 84
+  },
+  {
+    "id": "p_16",
+    "name": "R. De Paul",
+    "position": "CM",
+    "number": "7",
+    "team": "Argentina",
+    "rating": 84
+  },
+  {
+    "id": "p_14",
+    "name": "Sancet",
+    "position": "CAM",
+    "number": "8",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_265",
+    "name": "O. Marmoush",
+    "position": "ST",
+    "number": "7",
+    "team": "Egypt",
+    "rating": 84
+  },
+  {
+    "id": "p_132",
+    "name": "M. Locatelli",
+    "position": "CDM",
+    "number": "5",
+    "team": "Italy",
+    "rating": 84
+  },
+  {
+    "id": "p_146",
+    "name": "J. Maddison",
+    "position": "CM",
+    "number": "10",
+    "team": "England",
+    "rating": 84
+  },
+  {
+    "id": "p_133",
+    "name": "D. Dumfries",
+    "position": "RB",
+    "number": "2",
+    "team": "Netherlands",
+    "rating": 84
+  },
+  {
+    "id": "p_41",
+    "name": "Grimaldo",
+    "position": "LM",
+    "number": "20",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_24",
+    "name": "João Cancelo",
+    "position": "RB",
+    "number": "20",
+    "team": "Portugal",
+    "rating": 84
+  },
+  {
+    "id": "p_77",
+    "name": "Marc Cucurella",
+    "position": "LB",
+    "number": "3",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_16812",
+    "name": "G. Mamardashvili",
+    "position": "GK",
+    "number": "25",
+    "team": "Georgia",
+    "rating": 84
+  },
+  {
+    "id": "p_5997",
+    "name": "W. Orban",
+    "position": "CB",
+    "number": "4",
+    "team": "Hungary",
+    "rating": 84
+  },
+  {
+    "id": "p_201",
+    "name": "O. Watkins",
+    "position": "ST",
+    "number": "11",
+    "team": "England",
+    "rating": 84
+  },
+  {
+    "id": "p_576",
+    "name": "Rafael Leão",
+    "position": "LW",
+    "number": "10",
+    "team": "Portugal",
+    "rating": 84
+  },
+  {
+    "id": "p_3000",
+    "name": "S. de Vrij",
+    "position": "CB",
+    "number": "6",
+    "team": "Netherlands",
+    "rating": 84
+  },
+  {
+    "id": "p_196",
+    "name": "C. Gakpo",
+    "position": "LM",
+    "number": "18",
+    "team": "Netherlands",
+    "rating": 84
+  },
+  {
+    "id": "p_2417",
+    "name": "F. Acerbi",
+    "position": "CB",
+    "number": "15",
+    "team": "Italy",
+    "rating": 84
+  },
+  {
+    "id": "p_891",
+    "name": "A. Sørloth",
+    "position": "ST",
+    "number": "9",
+    "team": "Norway",
+    "rating": 84
+  },
+  {
+    "id": "p_1654",
+    "name": "Vivian",
+    "position": "CB",
+    "number": "3",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_12141",
+    "name": "J. Pickford",
+    "position": "GK",
+    "number": "1",
+    "team": "England",
+    "rating": 84
+  },
+  {
+    "id": "p_16228",
+    "name": "Diogo Costa",
+    "position": "GK",
+    "number": "99",
+    "team": "Portugal",
+    "rating": 84
+  },
+  {
+    "id": "p_116",
+    "name": "Álex Baena",
+    "position": "LM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_136",
+    "name": "A. Tchouaméni",
+    "position": "CDM",
+    "number": "14",
+    "team": "France",
+    "rating": 84
+  },
+  {
+    "id": "p_427",
+    "name": "R. Mahrez",
+    "position": "RM",
+    "number": "7",
+    "team": "Algeria",
+    "rating": 84
+  },
+  {
+    "id": "p_111",
+    "name": "B. Pavard",
+    "position": "CB",
+    "number": "28",
+    "team": "France",
+    "rating": 84
+  },
+  {
+    "id": "p_102",
+    "name": "J. Gvardiol",
+    "position": "LB",
+    "number": "24",
+    "team": "Croatia",
+    "rating": 84
+  },
+  {
+    "id": "p_767",
+    "name": "M. Diaby",
+    "position": "RM",
+    "number": "19",
+    "team": "France",
+    "rating": 84
+  },
+  {
+    "id": "p_139",
+    "name": "M. Zaccagni",
+    "position": "LM",
+    "number": "10",
+    "team": "Italy",
+    "rating": 84
+  },
+  {
+    "id": "p_14141",
+    "name": "M. Neuer",
+    "position": "GK",
+    "number": "1",
+    "team": "Germany",
+    "rating": 84
+  },
+  {
+    "id": "p_118",
+    "name": "E. Palacios",
+    "position": "CM",
+    "number": "25",
+    "team": "Argentina",
+    "rating": 84
+  },
+  {
+    "id": "p_97",
+    "name": "A. Davies",
+    "position": "LB",
+    "number": "19",
+    "team": "Canada",
+    "rating": 84
+  },
+  {
+    "id": "p_217",
+    "name": "Isco",
+    "position": "CAM",
+    "number": "22",
+    "team": "Spain",
+    "rating": 84
+  },
+  {
+    "id": "p_574",
+    "name": "R. Lukaku",
+    "position": "ST",
+    "number": "9",
+    "team": "Belgium",
+    "rating": 84
+  },
+  {
+    "id": "p_60",
+    "name": "Rúben Neves",
+    "position": "CDM",
+    "number": "8",
+    "team": "Portugal",
+    "rating": 84
+  },
+  {
+    "id": "p_16745",
+    "name": "M. Carnesecchi",
+    "position": "GK",
+    "number": "29",
+    "team": "Italy",
+    "rating": 84
+  },
+  {
+    "id": "p_167",
+    "name": "C. Pulisic",
+    "position": "RW",
+    "number": "11",
+    "team": "United States",
+    "rating": 84
+  },
+  {
+    "id": "p_595",
+    "name": "Éder Militão",
+    "position": "CB",
+    "number": "3",
+    "team": "Brazil",
+    "rating": 84
+  },
+  {
+    "id": "p_594",
+    "name": "A. Lookman",
+    "position": "ST",
+    "number": "11",
+    "team": "Nigeria",
+    "rating": 84
+  },
+  {
+    "id": "p_674",
+    "name": "N. Aké",
+    "position": "CB",
+    "number": "6",
+    "team": "Netherlands",
+    "rating": 83
+  },
+  {
+    "id": "p_430",
+    "name": "J. Brandt",
+    "position": "CAM",
+    "number": "10",
+    "team": "Germany",
+    "rating": 83
+  },
+  {
+    "id": "p_124",
+    "name": "G. Di Lorenzo",
+    "position": "RB",
+    "number": "22",
+    "team": "Italy",
+    "rating": 83
+  },
+  {
+    "id": "p_84",
+    "name": "D. Kulusevski",
+    "position": "CM",
+    "number": "21",
+    "team": "Sweden",
+    "rating": 83
+  },
+  {
+    "id": "p_15954",
+    "name": "M. Sels",
+    "position": "GK",
+    "number": "26",
+    "team": "Belgium",
+    "rating": 83
+  },
+  {
+    "id": "p_59",
+    "name": "E. Camavinga",
+    "position": "CM",
+    "number": "6",
+    "team": "France",
+    "rating": 83
+  },
+  {
+    "id": "p_3313",
+    "name": "A. Rrahmani",
+    "position": "CB",
+    "number": "13",
+    "team": "Kosovo",
+    "rating": 83
+  },
+  {
+    "id": "p_2357",
+    "name": "B. White",
+    "position": "RB",
+    "number": "4",
+    "team": "England",
+    "rating": 83
+  },
+  {
+    "id": "p_306",
+    "name": "J. Bowen",
+    "position": "RM",
+    "number": "20",
+    "team": "England",
+    "rating": 83
+  },
+  {
+    "id": "p_80",
+    "name": "L. Modrić",
+    "position": "CM",
+    "number": "14",
+    "team": "Croatia",
+    "rating": 83
+  },
+  {
+    "id": "p_650",
+    "name": "L. Openda",
+    "position": "ST",
+    "number": "20",
+    "team": "Belgium",
+    "rating": 83
+  },
+  {
+    "id": "p_815",
+    "name": "L. Trossard",
+    "position": "LW",
+    "number": "19",
+    "team": "Belgium",
+    "rating": 83
+  },
+  {
+    "id": "p_798",
+    "name": "B. Kamara",
+    "position": "CDM",
+    "number": "44",
+    "team": "France",
+    "rating": 83
+  },
+  {
+    "id": "p_96",
+    "name": "Ayoze",
+    "position": "ST",
+    "number": "22",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_3753",
+    "name": "N. Milenković",
+    "position": "CB",
+    "number": "31",
+    "team": "Serbia",
+    "rating": 83
+  },
+  {
+    "id": "p_67",
+    "name": "Pedro Gonçalves",
+    "position": "CAM",
+    "number": "8",
+    "team": "Portugal",
+    "rating": 83
+  },
+  {
+    "id": "p_107",
+    "name": "M. Hjulmand",
+    "position": "CDM",
+    "number": "42",
+    "team": "Denmark",
+    "rating": 83
+  },
+  {
+    "id": "p_190",
+    "name": "İ. Gündoğan",
+    "position": "CM",
+    "number": "20",
+    "team": "Germany",
+    "rating": 83
+  },
+  {
+    "id": "p_478",
+    "name": "A. Stiller",
+    "position": "CDM",
+    "number": "6",
+    "team": "Germany",
+    "rating": 83
+  },
+  {
+    "id": "p_16288",
+    "name": "O. Baumann",
+    "position": "GK",
+    "number": "1",
+    "team": "Germany",
+    "rating": 83
+  },
+  {
+    "id": "p_3479",
+    "name": "G. Mancini",
+    "position": "CB",
+    "number": "23",
+    "team": "Italy",
+    "rating": 83
+  },
+  {
+    "id": "p_423",
+    "name": "Iago Aspas",
+    "position": "RW",
+    "number": "10",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_115",
+    "name": "Aleix García",
+    "position": "CM",
+    "number": "24",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_16217",
+    "name": "Joan García",
+    "position": "GK",
+    "number": "13",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_310",
+    "name": "J. Frimpong",
+    "position": "RB",
+    "number": "30",
+    "team": "Netherlands",
+    "rating": 83
+  },
+  {
+    "id": "p_876",
+    "name": "Murillo",
+    "position": "CB",
+    "number": "5",
+    "team": "Brazil",
+    "rating": 83
+  },
+  {
+    "id": "p_169",
+    "name": "S. Mané",
+    "position": "LM",
+    "number": "10",
+    "team": "Senegal",
+    "rating": 83
+  },
+  {
+    "id": "p_205",
+    "name": "Zubimendi",
+    "position": "CDM",
+    "number": "36",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_277",
+    "name": "T. Partey",
+    "position": "CDM",
+    "number": "16",
+    "team": "Ghana",
+    "rating": 83
+  },
+  {
+    "id": "p_170",
+    "name": "Iñaki Williams",
+    "position": "RM",
+    "number": "9",
+    "team": "Ghana",
+    "rating": 83
+  },
+  {
+    "id": "p_233",
+    "name": "S. Lobotka",
+    "position": "CM",
+    "number": "68",
+    "team": "Slovakia",
+    "rating": 83
+  },
+  {
+    "id": "p_963",
+    "name": "A. Dovbyk",
+    "position": "ST",
+    "number": "9",
+    "team": "Ukraine",
+    "rating": 83
+  },
+  {
+    "id": "p_3163",
+    "name": "J. Giménez",
+    "position": "CB",
+    "number": "2",
+    "team": "Uruguay",
+    "rating": 83
+  },
+  {
+    "id": "p_184",
+    "name": "M. Kovačić",
+    "position": "CM",
+    "number": "8",
+    "team": "Croatia",
+    "rating": 83
+  },
+  {
+    "id": "p_1570",
+    "name": "M. Retegui",
+    "position": "ST",
+    "number": "32",
+    "team": "Italy",
+    "rating": 83
+  },
+  {
+    "id": "p_16638",
+    "name": "L. Chevalier",
+    "position": "GK",
+    "number": "30",
+    "team": "France",
+    "rating": 83
+  },
+  {
+    "id": "p_1343",
+    "name": "M. Kean",
+    "position": "ST",
+    "number": "20",
+    "team": "Italy",
+    "rating": 83
+  },
+  {
+    "id": "p_6240",
+    "name": "R. Le Normand",
+    "position": "CB",
+    "number": "24",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_543",
+    "name": "Ferran Torres",
+    "position": "LW",
+    "number": "7",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_1514",
+    "name": "P. Hincapié",
+    "position": "CB",
+    "number": "5",
+    "team": "Ecuador",
+    "rating": 83
+  },
+  {
+    "id": "p_1376",
+    "name": "K. Coman",
+    "position": "LM",
+    "number": "21",
+    "team": "France",
+    "rating": 83
+  },
+  {
+    "id": "p_224",
+    "name": "Ronaldo Cabrais",
+    "position": "CAM",
+    "number": "20",
+    "team": "Brazil",
+    "rating": 83
+  },
+  {
+    "id": "p_27",
+    "name": "D. Szoboszlai",
+    "position": "CAM",
+    "number": "8",
+    "team": "Hungary",
+    "rating": 83
+  },
+  {
+    "id": "p_1218",
+    "name": "H. Ekitiké",
+    "position": "ST",
+    "number": "22",
+    "team": "France",
+    "rating": 83
+  },
+  {
+    "id": "p_552",
+    "name": "Palhinha",
+    "position": "CDM",
+    "number": "6",
+    "team": "Portugal",
+    "rating": 83
+  },
+  {
+    "id": "p_1075",
+    "name": "Balde",
+    "position": "LB",
+    "number": "3",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_213",
+    "name": "E. Eze",
+    "position": "CAM",
+    "number": "10",
+    "team": "England",
+    "rating": 83
+  },
+  {
+    "id": "p_214",
+    "name": "Matheus Cunha",
+    "position": "CAM",
+    "number": "10",
+    "team": "Brazil",
+    "rating": 83
+  },
+  {
+    "id": "p_216",
+    "name": "D. Hancko",
+    "position": "CB",
+    "number": "17",
+    "team": "Slovakia",
+    "rating": 83
+  },
+  {
+    "id": "p_244",
+    "name": "A. Gordon",
+    "position": "LW",
+    "number": "10",
+    "team": "England",
+    "rating": 83
+  },
+  {
+    "id": "p_15840",
+    "name": "Álex Remiro",
+    "position": "GK",
+    "number": "1",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_2005",
+    "name": "R. Araujo",
+    "position": "CB",
+    "number": "4",
+    "team": "Uruguay",
+    "rating": 83
+  },
+  {
+    "id": "p_379",
+    "name": "Gavi",
+    "position": "CM",
+    "number": "6",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_37",
+    "name": "H. Mkhitaryan",
+    "position": "CM",
+    "number": "22",
+    "team": "Armenia",
+    "rating": 83
+  },
+  {
+    "id": "p_78",
+    "name": "L. Torreira",
+    "position": "CDM",
+    "number": "34",
+    "team": "Uruguay",
+    "rating": 83
+  },
+  {
+    "id": "p_15",
+    "name": "A. Rabiot",
+    "position": "CAM",
+    "number": "12",
+    "team": "France",
+    "rating": 83
+  },
+  {
+    "id": "p_45",
+    "name": "Mikel Merino",
+    "position": "CM",
+    "number": "23",
+    "team": "Spain",
+    "rating": 83
+  },
+  {
+    "id": "p_61",
+    "name": "F. Nmecha",
+    "position": "CDM",
+    "number": "8",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_2011",
+    "name": "A. Buongiorno",
+    "position": "CB",
+    "number": "4",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_374",
+    "name": "Á. Di María",
+    "position": "RW",
+    "number": "11",
+    "team": "Argentina",
+    "rating": 82
+  },
+  {
+    "id": "p_19",
+    "name": "L. Goretzka",
+    "position": "CM",
+    "number": "8",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_1018",
+    "name": "Y. Wissa",
+    "position": "ST",
+    "number": "9",
+    "team": "Congo DR",
+    "rating": 82
+  },
+  {
+    "id": "p_1333",
+    "name": "Y. En-Nesyri",
+    "position": "ST",
+    "number": "19",
+    "team": "Morocco",
+    "rating": 82
+  },
+  {
+    "id": "p_959",
+    "name": "J. David",
+    "position": "ST",
+    "number": "30",
+    "team": "Canada",
+    "rating": 82
+  },
+  {
+    "id": "p_5572",
+    "name": "S. Botman",
+    "position": "CB",
+    "number": "4",
+    "team": "Netherlands",
+    "rating": 82
+  },
+  {
+    "id": "p_2950",
+    "name": "K. Koulibaly",
+    "position": "CB",
+    "number": "3",
+    "team": "Senegal",
+    "rating": 82
+  },
+  {
+    "id": "p_234",
+    "name": "D. Zakaria",
+    "position": "CDM",
+    "number": "6",
+    "team": "Switzerland",
+    "rating": 82
+  },
+  {
+    "id": "p_5312",
+    "name": "Ibañez",
+    "position": "CB",
+    "number": "3",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_918",
+    "name": "J. Stones",
+    "position": "CB",
+    "number": "5",
+    "team": "England",
+    "rating": 82
+  },
+  {
+    "id": "p_1056",
+    "name": "D. Lukébakio",
+    "position": "RM",
+    "number": "11",
+    "team": "Belgium",
+    "rating": 82
+  },
+  {
+    "id": "p_569",
+    "name": "S. Gnabry",
+    "position": "LM",
+    "number": "7",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_5185",
+    "name": "A. Romagnoli",
+    "position": "CB",
+    "number": "13",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_284",
+    "name": "V. Pavlidis",
+    "position": "ST",
+    "number": "14",
+    "team": "Greece",
+    "rating": 82
+  },
+  {
+    "id": "p_958",
+    "name": "J. Mateta",
+    "position": "ST",
+    "number": "14",
+    "team": "France",
+    "rating": 82
+  },
+  {
+    "id": "p_193",
+    "name": "S. Al Dawsari",
+    "position": "LM",
+    "number": "29",
+    "team": "Saudi Arabia",
+    "rating": 82
+  },
+  {
+    "id": "p_1496",
+    "name": "M. Akanji",
+    "position": "CB",
+    "number": "25",
+    "team": "Switzerland",
+    "rating": 82
+  },
+  {
+    "id": "p_238",
+    "name": "F. Schär",
+    "position": "CB",
+    "number": "5",
+    "team": "Switzerland",
+    "rating": 82
+  },
+  {
+    "id": "p_655",
+    "name": "M. Greenwood",
+    "position": "RM",
+    "number": "10",
+    "team": "England",
+    "rating": 82
+  },
+  {
+    "id": "p_831",
+    "name": "J. Timber",
+    "position": "RB",
+    "number": "12",
+    "team": "Netherlands",
+    "rating": 82
+  },
+  {
+    "id": "p_753",
+    "name": "E. Konsa",
+    "position": "CB",
+    "number": "4",
+    "team": "England",
+    "rating": 82
+  },
+  {
+    "id": "p_1856",
+    "name": "D. Zapata",
+    "position": "ST",
+    "number": "91",
+    "team": "Colombia",
+    "rating": 82
+  },
+  {
+    "id": "p_16139",
+    "name": "Y. Bounou",
+    "position": "GK",
+    "number": "37",
+    "team": "Morocco",
+    "rating": 82
+  },
+  {
+    "id": "p_2560",
+    "name": "Pau Cubarsí",
+    "position": "CB",
+    "number": "5",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_864",
+    "name": "D. Huijsen",
+    "position": "CB",
+    "number": "24",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_867",
+    "name": "D. Sánchez",
+    "position": "CB",
+    "number": "6",
+    "team": "Colombia",
+    "rating": 82
+  },
+  {
+    "id": "p_150",
+    "name": "K. Laimer",
+    "position": "RB",
+    "number": "27",
+    "team": "Austria",
+    "rating": 82
+  },
+  {
+    "id": "p_281",
+    "name": "M. Mittelstädt",
+    "position": "LB",
+    "number": "7",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_207",
+    "name": "A. Robertson",
+    "position": "LB",
+    "number": "26",
+    "team": "Scotland",
+    "rating": 82
+  },
+  {
+    "id": "p_1723",
+    "name": "M. van de Ven",
+    "position": "CB",
+    "number": "37",
+    "team": "Netherlands",
+    "rating": 82
+  },
+  {
+    "id": "p_1738",
+    "name": "A. Laporte",
+    "position": "CB",
+    "number": "14",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_1737",
+    "name": "M. Ginter",
+    "position": "CB",
+    "number": "28",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_298",
+    "name": "M. Götze",
+    "position": "CM",
+    "number": "27",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_2403",
+    "name": "Nacho Fernández",
+    "position": "CB",
+    "number": "6",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_2461",
+    "name": "C. Romero",
+    "position": "CB",
+    "number": "17",
+    "team": "Argentina",
+    "rating": 82
+  },
+  {
+    "id": "p_2489",
+    "name": "A. Budimir",
+    "position": "ST",
+    "number": "17",
+    "team": "Croatia",
+    "rating": 82
+  },
+  {
+    "id": "p_1665",
+    "name": "N. Otamendi",
+    "position": "CB",
+    "number": "30",
+    "team": "Argentina",
+    "rating": 82
+  },
+  {
+    "id": "p_2595",
+    "name": "M. Guéhi",
+    "position": "CB",
+    "number": "6",
+    "team": "England",
+    "rating": 82
+  },
+  {
+    "id": "p_485",
+    "name": "A. Robinson",
+    "position": "LB",
+    "number": "33",
+    "team": "United States",
+    "rating": 82
+  },
+  {
+    "id": "p_1608",
+    "name": "M. de Ligt",
+    "position": "CB",
+    "number": "4",
+    "team": "Netherlands",
+    "rating": 82
+  },
+  {
+    "id": "p_1633",
+    "name": "C. Wood",
+    "position": "ST",
+    "number": "11",
+    "team": "New Zealand",
+    "rating": 82
+  },
+  {
+    "id": "p_465",
+    "name": "K. Havertz",
+    "position": "ST",
+    "number": "29",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_497",
+    "name": "Trincão",
+    "position": "CAM",
+    "number": "17",
+    "team": "Portugal",
+    "rating": 82
+  },
+  {
+    "id": "p_180",
+    "name": "Parejo",
+    "position": "CM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_220",
+    "name": "Malcom",
+    "position": "CAM",
+    "number": "10",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_15746",
+    "name": "G. Vicario",
+    "position": "GK",
+    "number": "1",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_368",
+    "name": "L. Sané",
+    "position": "RM",
+    "number": "10",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_355",
+    "name": "P. Højbjerg",
+    "position": "CDM",
+    "number": "23",
+    "team": "Denmark",
+    "rating": 82
+  },
+  {
+    "id": "p_15517",
+    "name": "I. Provedel",
+    "position": "GK",
+    "number": "94",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_342",
+    "name": "Fabinho",
+    "position": "CDM",
+    "number": "8",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_350",
+    "name": "R. Orsolini",
+    "position": "RM",
+    "number": "7",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_2154",
+    "name": "Brahim",
+    "position": "RM",
+    "number": "21",
+    "team": "Morocco",
+    "rating": 82
+  },
+  {
+    "id": "p_832",
+    "name": "R. Doan",
+    "position": "RM",
+    "number": "20",
+    "team": "Japan",
+    "rating": 82
+  },
+  {
+    "id": "p_1958",
+    "name": "W. Anton",
+    "position": "CB",
+    "number": "3",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_393",
+    "name": "Pablo Barrios",
+    "position": "CM",
+    "number": "8",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_55",
+    "name": "O. Kökçü",
+    "position": "CM",
+    "number": "10",
+    "team": "Türkiye",
+    "rating": 82
+  },
+  {
+    "id": "p_64",
+    "name": "Berenguer",
+    "position": "LM",
+    "number": "7",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_54",
+    "name": "Otávio",
+    "position": "CAM",
+    "number": "25",
+    "team": "Portugal",
+    "rating": 82
+  },
+  {
+    "id": "p_704",
+    "name": "Rafa",
+    "position": "CAM",
+    "number": "27",
+    "team": "Portugal",
+    "rating": 82
+  },
+  {
+    "id": "p_719",
+    "name": "J. Burkardt",
+    "position": "ST",
+    "number": "9",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_82",
+    "name": "G. Lo Celso",
+    "position": "CAM",
+    "number": "20",
+    "team": "Argentina",
+    "rating": 82
+  },
+  {
+    "id": "p_15329",
+    "name": "G. Rulli",
+    "position": "GK",
+    "number": "1",
+    "team": "Argentina",
+    "rating": 82
+  },
+  {
+    "id": "p_16012",
+    "name": "K. Casteels",
+    "position": "GK",
+    "number": "1",
+    "team": "Belgium",
+    "rating": 82
+  },
+  {
+    "id": "p_15989",
+    "name": "Lucas Mantela",
+    "position": "GK",
+    "number": "1",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_3926",
+    "name": "R. Koch",
+    "position": "CB",
+    "number": "4",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_100",
+    "name": "M. Guendouzi",
+    "position": "CDM",
+    "number": "8",
+    "team": "France",
+    "rating": 82
+  },
+  {
+    "id": "p_157",
+    "name": "D. Raum",
+    "position": "LB",
+    "number": "22",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_103",
+    "name": "A. Zambo Anguissa",
+    "position": "CM",
+    "number": "99",
+    "team": "Cameroon",
+    "rating": 82
+  },
+  {
+    "id": "p_731",
+    "name": "T. Kubo",
+    "position": "RM",
+    "number": "14",
+    "team": "Japan",
+    "rating": 82
+  },
+  {
+    "id": "p_445",
+    "name": "D. Berardi",
+    "position": "RW",
+    "number": "10",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_14802",
+    "name": "M. Svilar",
+    "position": "GK",
+    "number": "99",
+    "team": "Serbia",
+    "rating": 82
+  },
+  {
+    "id": "p_419",
+    "name": "K. Mitoma",
+    "position": "LM",
+    "number": "22",
+    "team": "Japan",
+    "rating": 82
+  },
+  {
+    "id": "p_129",
+    "name": "Éderson",
+    "position": "CM",
+    "number": "13",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_131",
+    "name": "M. Gibbs-White",
+    "position": "CAM",
+    "number": "10",
+    "team": "England",
+    "rating": 82
+  },
+  {
+    "id": "p_2280",
+    "name": "Savinho",
+    "position": "RW",
+    "number": "26",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_305",
+    "name": "C. De Ketelaere",
+    "position": "CAM",
+    "number": "17",
+    "team": "Belgium",
+    "rating": 82
+  },
+  {
+    "id": "p_4705",
+    "name": "Kim Min Jae",
+    "position": "CB",
+    "number": "3",
+    "team": "Korea Republic",
+    "rating": 82
+  },
+  {
+    "id": "p_173",
+    "name": "M. Kerkez",
+    "position": "LB",
+    "number": "6",
+    "team": "Hungary",
+    "rating": 82
+  },
+  {
+    "id": "p_797",
+    "name": "D. Vlahović",
+    "position": "ST",
+    "number": "9",
+    "team": "Serbia",
+    "rating": 82
+  },
+  {
+    "id": "p_16124",
+    "name": "A. Meret",
+    "position": "GK",
+    "number": "1",
+    "team": "Italy",
+    "rating": 82
+  },
+  {
+    "id": "p_117",
+    "name": "M. Tillman",
+    "position": "CAM",
+    "number": "10",
+    "team": "United States",
+    "rating": 82
+  },
+  {
+    "id": "p_153",
+    "name": "M. Rogers",
+    "position": "CAM",
+    "number": "27",
+    "team": "England",
+    "rating": 82
+  },
+  {
+    "id": "p_68",
+    "name": "Joelinton",
+    "position": "CM",
+    "number": "7",
+    "team": "Brazil",
+    "rating": 82
+  },
+  {
+    "id": "p_51",
+    "name": "Pedro Porro",
+    "position": "RB",
+    "number": "23",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_48",
+    "name": "D. Alaba",
+    "position": "CB",
+    "number": "4",
+    "team": "Austria",
+    "rating": 82
+  },
+  {
+    "id": "p_65",
+    "name": "E. Can",
+    "position": "CB",
+    "number": "23",
+    "team": "Germany",
+    "rating": 82
+  },
+  {
+    "id": "p_331",
+    "name": "Oyarzabal",
+    "position": "ST",
+    "number": "10",
+    "team": "Spain",
+    "rating": 82
+  },
+  {
+    "id": "p_553",
+    "name": "F. Chiesa",
+    "position": "RM",
+    "number": "14",
+    "team": "Italy",
+    "rating": 81
+  },
+  {
+    "id": "p_208",
+    "name": "F. Mendy",
+    "position": "LB",
+    "number": "23",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_604",
+    "name": "G. Simeone",
+    "position": "RM",
+    "number": "20",
+    "team": "Argentina",
+    "rating": 81
+  },
+  {
+    "id": "p_3187",
+    "name": "F. Tomori",
+    "position": "CB",
+    "number": "23",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_200",
+    "name": "Johnny Cardoso",
+    "position": "CDM",
+    "number": "5",
+    "team": "United States",
+    "rating": 81
+  },
+  {
+    "id": "p_16874",
+    "name": "W. Falcone",
+    "position": "GK",
+    "number": "30",
+    "team": "Italy",
+    "rating": 81
+  },
+  {
+    "id": "p_1195",
+    "name": "M. Icardi",
+    "position": "ST",
+    "number": "9",
+    "team": "Argentina",
+    "rating": 81
+  },
+  {
+    "id": "p_42",
+    "name": "R. James",
+    "position": "RB",
+    "number": "24",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_43",
+    "name": "F. Kostić",
+    "position": "LM",
+    "number": "18",
+    "team": "Serbia",
+    "rating": 81
+  },
+  {
+    "id": "p_63",
+    "name": "J. McGinn",
+    "position": "LM",
+    "number": "7",
+    "team": "Scotland",
+    "rating": 81
+  },
+  {
+    "id": "p_987",
+    "name": "L. Hernández",
+    "position": "CB",
+    "number": "21",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_986",
+    "name": "R. Kolo Muani",
+    "position": "ST",
+    "number": "39",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_44",
+    "name": "C. Gallagher",
+    "position": "CM",
+    "number": "4",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_62",
+    "name": "Carlos Augusto",
+    "position": "LB",
+    "number": "30",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_39",
+    "name": "T. Koopmeiners",
+    "position": "CAM",
+    "number": "8",
+    "team": "Netherlands",
+    "rating": 81
+  },
+  {
+    "id": "p_1039",
+    "name": "Danilo Pereira",
+    "position": "CB",
+    "number": "2",
+    "team": "Portugal",
+    "rating": 81
+  },
+  {
+    "id": "p_1005",
+    "name": "P. Aubameyang",
+    "position": "ST",
+    "number": "97",
+    "team": "Gabon",
+    "rating": 81
+  },
+  {
+    "id": "p_209",
+    "name": "D. Muñoz",
+    "position": "RB",
+    "number": "2",
+    "team": "Colombia",
+    "rating": 81
+  },
+  {
+    "id": "p_3126",
+    "name": "N. Süle",
+    "position": "CB",
+    "number": "25",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_1157",
+    "name": "Morata",
+    "position": "ST",
+    "number": "7",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_1244",
+    "name": "E. Tapsoba",
+    "position": "CB",
+    "number": "12",
+    "team": "Burkina Faso",
+    "rating": 81
+  },
+  {
+    "id": "p_5746",
+    "name": "Raíllo",
+    "position": "CB",
+    "number": "21",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_161",
+    "name": "C. Baleba",
+    "position": "CDM",
+    "number": "17",
+    "team": "Cameroon",
+    "rating": 81
+  },
+  {
+    "id": "p_1512",
+    "name": "Gonçalo Inácio",
+    "position": "CB",
+    "number": "25",
+    "team": "Portugal",
+    "rating": 81
+  },
+  {
+    "id": "p_1449",
+    "name": "T. Kleindienst",
+    "position": "ST",
+    "number": "11",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_16691",
+    "name": "L. Hrádecký",
+    "position": "GK",
+    "number": "1",
+    "team": "Finland",
+    "rating": 81
+  },
+  {
+    "id": "p_16715",
+    "name": "A. Lunin",
+    "position": "GK",
+    "number": "13",
+    "team": "Ukraine",
+    "rating": 81
+  },
+  {
+    "id": "p_1751",
+    "name": "S. Banza",
+    "position": "ST",
+    "number": "64",
+    "team": "Congo DR",
+    "rating": 81
+  },
+  {
+    "id": "p_2335",
+    "name": "R. Cherki",
+    "position": "RW",
+    "number": "10",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_3298",
+    "name": "M. Škriniar",
+    "position": "CB",
+    "number": "37",
+    "team": "Slovakia",
+    "rating": 81
+  },
+  {
+    "id": "p_781",
+    "name": "Galeno",
+    "position": "LM",
+    "number": "13",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_160",
+    "name": "Anderson Talisca",
+    "position": "CAM",
+    "number": "94",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_855",
+    "name": "David Neres",
+    "position": "LW",
+    "number": "7",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_314",
+    "name": "M. Politano",
+    "position": "RW",
+    "number": "21",
+    "team": "Italy",
+    "rating": 81
+  },
+  {
+    "id": "p_154",
+    "name": "Y. Carrasco",
+    "position": "LW",
+    "number": "10",
+    "team": "Belgium",
+    "rating": 81
+  },
+  {
+    "id": "p_820",
+    "name": "C. Nkunku",
+    "position": "CAM",
+    "number": "18",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_283",
+    "name": "Gayà",
+    "position": "LB",
+    "number": "14",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_890",
+    "name": "A. Elanga",
+    "position": "RW",
+    "number": "20",
+    "team": "Sweden",
+    "rating": 81
+  },
+  {
+    "id": "p_16434",
+    "name": "K. Trapp",
+    "position": "GK",
+    "number": "35",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_1649",
+    "name": "E. Džeko",
+    "position": "ST",
+    "number": "9",
+    "team": "Bosnia and Herzegovina",
+    "rating": 81
+  },
+  {
+    "id": "p_274",
+    "name": "L. Martínez",
+    "position": "CB",
+    "number": "6",
+    "team": "Argentina",
+    "rating": 81
+  },
+  {
+    "id": "p_183",
+    "name": "N. Amiri",
+    "position": "CM",
+    "number": "10",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_1527",
+    "name": "V. Boniface",
+    "position": "ST",
+    "number": "44",
+    "team": "Nigeria",
+    "rating": 81
+  },
+  {
+    "id": "p_2404",
+    "name": "Oswaldinato",
+    "position": "ST",
+    "number": "9",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_300",
+    "name": "I. Toney",
+    "position": "ST",
+    "number": "99",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_1566",
+    "name": "E. Ndicka",
+    "position": "CB",
+    "number": "5",
+    "team": "Côte d'Ivoire",
+    "rating": 81
+  },
+  {
+    "id": "p_2250",
+    "name": "M. Simakan",
+    "position": "CB",
+    "number": "3",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_2202",
+    "name": "L. Balerdi",
+    "position": "CB",
+    "number": "5",
+    "team": "Argentina",
+    "rating": 81
+  },
+  {
+    "id": "p_333",
+    "name": "Y. Fofana",
+    "position": "CDM",
+    "number": "19",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_304",
+    "name": "Ricardo Horta",
+    "position": "CAM",
+    "number": "21",
+    "team": "Portugal",
+    "rating": 81
+  },
+  {
+    "id": "p_16302",
+    "name": "Rui Silva",
+    "position": "GK",
+    "number": "1",
+    "team": "Portugal",
+    "rating": 81
+  },
+  {
+    "id": "p_422",
+    "name": "M. Depay",
+    "position": "ST",
+    "number": "10",
+    "team": "Netherlands",
+    "rating": 81
+  },
+  {
+    "id": "p_418",
+    "name": "R. Freuler",
+    "position": "CDM",
+    "number": "8",
+    "team": "Switzerland",
+    "rating": 81
+  },
+  {
+    "id": "p_135",
+    "name": "R. Andrich",
+    "position": "CDM",
+    "number": "8",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_98",
+    "name": "D. Frattesi",
+    "position": "CM",
+    "number": "16",
+    "team": "Italy",
+    "rating": 81
+  },
+  {
+    "id": "p_140",
+    "name": "M. de Roon",
+    "position": "CM",
+    "number": "15",
+    "team": "Netherlands",
+    "rating": 81
+  },
+  {
+    "id": "p_142",
+    "name": "Brais Méndez",
+    "position": "CM",
+    "number": "23",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_16035",
+    "name": "N. Pope",
+    "position": "GK",
+    "number": "1",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_15994",
+    "name": "Lucas Perri",
+    "position": "GK",
+    "number": "1",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_15975",
+    "name": "David Soria",
+    "position": "GK",
+    "number": "13",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_406",
+    "name": "Rosival Dourado",
+    "position": "CDM",
+    "number": "5",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_405",
+    "name": "M. Darmian",
+    "position": "RB",
+    "number": "36",
+    "team": "Italy",
+    "rating": 81
+  },
+  {
+    "id": "p_72",
+    "name": "I. Perišić",
+    "position": "RW",
+    "number": "5",
+    "team": "Croatia",
+    "rating": 81
+  },
+  {
+    "id": "p_71",
+    "name": "K. Thuram",
+    "position": "CM",
+    "number": "19",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_2087",
+    "name": "N. Aguerd",
+    "position": "CB",
+    "number": "21",
+    "team": "Morocco",
+    "rating": 81
+  },
+  {
+    "id": "p_127",
+    "name": "Miguel Gutiérrez",
+    "position": "LB",
+    "number": "3",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_15086",
+    "name": "A. Nübel",
+    "position": "GK",
+    "number": "33",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_15316",
+    "name": "M. Di Gregorio",
+    "position": "GK",
+    "number": "16",
+    "team": "Italy",
+    "rating": 81
+  },
+  {
+    "id": "p_431",
+    "name": "A. Kramarić",
+    "position": "CAM",
+    "number": "27",
+    "team": "Croatia",
+    "rating": 81
+  },
+  {
+    "id": "p_121",
+    "name": "Koke",
+    "position": "CM",
+    "number": "6",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_90",
+    "name": "C. Tolisso",
+    "position": "CM",
+    "number": "8",
+    "team": "France",
+    "rating": 81
+  },
+  {
+    "id": "p_91",
+    "name": "M. Brozović",
+    "position": "CDM",
+    "number": "11",
+    "team": "Croatia",
+    "rating": 81
+  },
+  {
+    "id": "p_126",
+    "name": "Y. Herrera",
+    "position": "CM",
+    "number": "12",
+    "team": "Venezuela",
+    "rating": 81
+  },
+  {
+    "id": "p_358",
+    "name": "Dani Ceballos",
+    "position": "CM",
+    "number": "19",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_362",
+    "name": "Welington Dano",
+    "position": "LB",
+    "number": "21",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_402",
+    "name": "Antony",
+    "position": "RW",
+    "number": "7",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_337",
+    "name": "J. Murphy",
+    "position": "RW",
+    "number": "23",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_336",
+    "name": "Gerard Moreno",
+    "position": "ST",
+    "number": "7",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_732",
+    "name": "A. Güler",
+    "position": "RM",
+    "number": "15",
+    "team": "Türkiye",
+    "rating": 81
+  },
+  {
+    "id": "p_690",
+    "name": "Nailton Suzuki",
+    "position": "CAM",
+    "number": "11",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_662",
+    "name": "K. Adeyemi",
+    "position": "RM",
+    "number": "27",
+    "team": "Germany",
+    "rating": 81
+  },
+  {
+    "id": "p_692",
+    "name": "Isi",
+    "position": "CAM",
+    "number": "7",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_89",
+    "name": "Sergi Darder",
+    "position": "LM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 81
+  },
+  {
+    "id": "p_15908",
+    "name": "D. Henderson",
+    "position": "GK",
+    "number": "1",
+    "team": "England",
+    "rating": 81
+  },
+  {
+    "id": "p_386",
+    "name": "R. Aït-Nouri",
+    "position": "LB",
+    "number": "21",
+    "team": "Algeria",
+    "rating": 81
+  },
+  {
+    "id": "p_385",
+    "name": "Gabriel Martinelli",
+    "position": "LW",
+    "number": "11",
+    "team": "Brazil",
+    "rating": 81
+  },
+  {
+    "id": "p_3686",
+    "name": "J. Tarkowski",
+    "position": "CB",
+    "number": "6",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_703",
+    "name": "Fermín",
+    "position": "CAM",
+    "number": "16",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_47",
+    "name": "Fred",
+    "position": "CM",
+    "number": "7",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_22",
+    "name": "M. Sabitzer",
+    "position": "CDM",
+    "number": "20",
+    "team": "Austria",
+    "rating": 80
+  },
+  {
+    "id": "p_95",
+    "name": "Douglas Luiz",
+    "position": "CM",
+    "number": "12",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_658",
+    "name": "C. Tzolis",
+    "position": "LM",
+    "number": "8",
+    "team": "Greece",
+    "rating": 80
+  },
+  {
+    "id": "p_697",
+    "name": "N. Madueke",
+    "position": "RW",
+    "number": "20",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_713",
+    "name": "A. El Kaabi",
+    "position": "ST",
+    "number": "9",
+    "team": "Morocco",
+    "rating": 80
+  },
+  {
+    "id": "p_729",
+    "name": "A. Semenyo",
+    "position": "RM",
+    "number": "24",
+    "team": "Ghana",
+    "rating": 80
+  },
+  {
+    "id": "p_112",
+    "name": "E. Anderson",
+    "position": "CDM",
+    "number": "8",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_143",
+    "name": "R. Gosens",
+    "position": "LB",
+    "number": "21",
+    "team": "Germany",
+    "rating": 80
+  },
+  {
+    "id": "p_106",
+    "name": "Gabriel Sara",
+    "position": "CM",
+    "number": "8",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_105",
+    "name": "Lucas Paquetá",
+    "position": "CM",
+    "number": "10",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_104",
+    "name": "K. Trippier",
+    "position": "RB",
+    "number": "2",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_159",
+    "name": "G. Sudakov",
+    "position": "CAM",
+    "number": "10",
+    "team": "Ukraine",
+    "rating": 80
+  },
+  {
+    "id": "p_383",
+    "name": "B. André",
+    "position": "CDM",
+    "number": "21",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_382",
+    "name": "F. Honorat",
+    "position": "RM",
+    "number": "9",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_15416",
+    "name": "U. Çakır",
+    "position": "GK",
+    "number": "1",
+    "team": "Türkiye",
+    "rating": 80
+  },
+  {
+    "id": "p_345",
+    "name": "M. Kudus",
+    "position": "RW",
+    "number": "20",
+    "team": "Ghana",
+    "rating": 80
+  },
+  {
+    "id": "p_397",
+    "name": "H. Vanaken",
+    "position": "CAM",
+    "number": "20",
+    "team": "Belgium",
+    "rating": 80
+  },
+  {
+    "id": "p_396",
+    "name": "Javi Galán",
+    "position": "LB",
+    "number": "21",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_15722",
+    "name": "B. Leno",
+    "position": "GK",
+    "number": "1",
+    "team": "Germany",
+    "rating": 80
+  },
+  {
+    "id": "p_312",
+    "name": "Álvaro Carreras",
+    "position": "LB",
+    "number": "18",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_16130",
+    "name": "Đ. Petrović",
+    "position": "GK",
+    "number": "1",
+    "team": "Serbia",
+    "rating": 80
+  },
+  {
+    "id": "p_1890",
+    "name": "J. Doku",
+    "position": "LW",
+    "number": "11",
+    "team": "Belgium",
+    "rating": 80
+  },
+  {
+    "id": "p_424",
+    "name": "O. Aina",
+    "position": "RB",
+    "number": "34",
+    "team": "Nigeria",
+    "rating": 80
+  },
+  {
+    "id": "p_642",
+    "name": "V. Grifo",
+    "position": "LM",
+    "number": "32",
+    "team": "Italy",
+    "rating": 80
+  },
+  {
+    "id": "p_741",
+    "name": "Igor Paixão",
+    "position": "LM",
+    "number": "14",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_771",
+    "name": "N. Pépé",
+    "position": "RM",
+    "number": "19",
+    "team": "Côte d'Ivoire",
+    "rating": 80
+  },
+  {
+    "id": "p_769",
+    "name": "M. Rashford",
+    "position": "LM",
+    "number": "14",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_172",
+    "name": "J. Clauss",
+    "position": "RB",
+    "number": "92",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_4019",
+    "name": "F. Gatti",
+    "position": "CB",
+    "number": "4",
+    "team": "Italy",
+    "rating": 80
+  },
+  {
+    "id": "p_134",
+    "name": "L. Digne",
+    "position": "LB",
+    "number": "12",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_626",
+    "name": "W. Singo",
+    "position": "CB",
+    "number": "90",
+    "team": "Côte d'Ivoire",
+    "rating": 80
+  },
+  {
+    "id": "p_801",
+    "name": "T. Livramento",
+    "position": "RB",
+    "number": "21",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_828",
+    "name": "J. Quiñones",
+    "position": "ST",
+    "number": "33",
+    "team": "Mexico",
+    "rating": 80
+  },
+  {
+    "id": "p_823",
+    "name": "Pedro Neto",
+    "position": "RM",
+    "number": "7",
+    "team": "Portugal",
+    "rating": 80
+  },
+  {
+    "id": "p_861",
+    "name": "D. Undav",
+    "position": "ST",
+    "number": "26",
+    "team": "Germany",
+    "rating": 80
+  },
+  {
+    "id": "p_191",
+    "name": "W. Zaïre-Emery",
+    "position": "CM",
+    "number": "33",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_149",
+    "name": "R. Guerreiro",
+    "position": "LB",
+    "number": "22",
+    "team": "Portugal",
+    "rating": 80
+  },
+  {
+    "id": "p_147",
+    "name": "P. Groß",
+    "position": "CDM",
+    "number": "13",
+    "team": "Germany",
+    "rating": 80
+  },
+  {
+    "id": "p_2326",
+    "name": "Florentino",
+    "position": "CDM",
+    "number": "16",
+    "team": "Portugal",
+    "rating": 80
+  },
+  {
+    "id": "p_458",
+    "name": "J. Grealish",
+    "position": "LW",
+    "number": "18",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_16250",
+    "name": "Héniton Pires",
+    "position": "GK",
+    "number": "1",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_442",
+    "name": "A. Iwobi",
+    "position": "LM",
+    "number": "17",
+    "team": "Nigeria",
+    "rating": 80
+  },
+  {
+    "id": "p_330",
+    "name": "M. Amoura",
+    "position": "ST",
+    "number": "9",
+    "team": "Algeria",
+    "rating": 80
+  },
+  {
+    "id": "p_13293",
+    "name": "A. Onana",
+    "position": "GK",
+    "number": "24",
+    "team": "Cameroon",
+    "rating": 80
+  },
+  {
+    "id": "p_2167",
+    "name": "S. Chukwueze",
+    "position": "RM",
+    "number": "19",
+    "team": "Nigeria",
+    "rating": 80
+  },
+  {
+    "id": "p_638",
+    "name": "C. Nørgaard",
+    "position": "CDM",
+    "number": "16",
+    "team": "Denmark",
+    "rating": 80
+  },
+  {
+    "id": "p_874",
+    "name": "Marco Asensio",
+    "position": "RW",
+    "number": "21",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_865",
+    "name": "Heberto Gaúcho",
+    "position": "CB",
+    "number": "19",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_883",
+    "name": "A. Laurienté",
+    "position": "LW",
+    "number": "45",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_908",
+    "name": "P. Kalulu",
+    "position": "CB",
+    "number": "15",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_906",
+    "name": "Gonçalo Ramos",
+    "position": "ST",
+    "number": "9",
+    "team": "Portugal",
+    "rating": 80
+  },
+  {
+    "id": "p_4668",
+    "name": "Tony Abranjes",
+    "position": "CB",
+    "number": "3",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_3218",
+    "name": "Laure Santeiro",
+    "position": "CAM",
+    "number": "9",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_16486",
+    "name": "É. Mendy",
+    "position": "GK",
+    "number": "16",
+    "team": "Senegal",
+    "rating": 80
+  },
+  {
+    "id": "p_1660",
+    "name": "Sergio Busquets",
+    "position": "CDM",
+    "number": "5",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_475",
+    "name": "Casemiro",
+    "position": "CDM",
+    "number": "18",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_492",
+    "name": "B. Henrichs",
+    "position": "RB",
+    "number": "39",
+    "team": "Germany",
+    "rating": 80
+  },
+  {
+    "id": "p_1701",
+    "name": "L. Colwill",
+    "position": "CB",
+    "number": "6",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_1743",
+    "name": "J. van Hecke",
+    "position": "CB",
+    "number": "6",
+    "team": "Netherlands",
+    "rating": 80
+  },
+  {
+    "id": "p_2376",
+    "name": "H. Maguire",
+    "position": "CB",
+    "number": "5",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_335",
+    "name": "B. Cristante",
+    "position": "CM",
+    "number": "4",
+    "team": "Italy",
+    "rating": 80
+  },
+  {
+    "id": "p_2188",
+    "name": "C. Lukeba",
+    "position": "CB",
+    "number": "23",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_2310",
+    "name": "Yeremy Pino",
+    "position": "RM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_176",
+    "name": "Mingueza",
+    "position": "RB",
+    "number": "3",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_914",
+    "name": "H. Barnes",
+    "position": "LW",
+    "number": "11",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_942",
+    "name": "E. Demirović",
+    "position": "ST",
+    "number": "9",
+    "team": "Bosnia and Herzegovina",
+    "rating": 80
+  },
+  {
+    "id": "p_954",
+    "name": "B. Dia",
+    "position": "ST",
+    "number": "19",
+    "team": "Senegal",
+    "rating": 80
+  },
+  {
+    "id": "p_237",
+    "name": "E. Skhiri",
+    "position": "CDM",
+    "number": "15",
+    "team": "Tunisia",
+    "rating": 80
+  },
+  {
+    "id": "p_236",
+    "name": "M. Damsgaard",
+    "position": "CAM",
+    "number": "24",
+    "team": "Denmark",
+    "rating": 80
+  },
+  {
+    "id": "p_6990",
+    "name": "O. Diomande",
+    "position": "CB",
+    "number": "26",
+    "team": "Côte d'Ivoire",
+    "rating": 80
+  },
+  {
+    "id": "p_2788",
+    "name": "A. Theate",
+    "position": "CB",
+    "number": "3",
+    "team": "Belgium",
+    "rating": 80
+  },
+  {
+    "id": "p_267",
+    "name": "R. Bentancur",
+    "position": "CDM",
+    "number": "30",
+    "team": "Uruguay",
+    "rating": 80
+  },
+  {
+    "id": "p_486",
+    "name": "T. Müller",
+    "position": "CAM",
+    "number": "13",
+    "team": "Germany",
+    "rating": 80
+  },
+  {
+    "id": "p_16519",
+    "name": "A. Trubin",
+    "position": "GK",
+    "number": "1",
+    "team": "Ukraine",
+    "rating": 80
+  },
+  {
+    "id": "p_199",
+    "name": "Andrey Santos",
+    "position": "CM",
+    "number": "17",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_961",
+    "name": "B. Šeško",
+    "position": "ST",
+    "number": "30",
+    "team": "Slovenia",
+    "rating": 80
+  },
+  {
+    "id": "p_1026",
+    "name": "Mario Hermoso",
+    "position": "CB",
+    "number": "22",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_255",
+    "name": "D. Udogie",
+    "position": "LB",
+    "number": "13",
+    "team": "Italy",
+    "rating": 80
+  },
+  {
+    "id": "p_3093",
+    "name": "C. Lenglet",
+    "position": "CB",
+    "number": "15",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_212",
+    "name": "P. Zieliński",
+    "position": "CM",
+    "number": "7",
+    "team": "Poland",
+    "rating": 80
+  },
+  {
+    "id": "p_1069",
+    "name": "Maikel Catarino",
+    "position": "RB",
+    "number": "2",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_566",
+    "name": "S. Bergwijn",
+    "position": "LM",
+    "number": "34",
+    "team": "Netherlands",
+    "rating": 80
+  },
+  {
+    "id": "p_1117",
+    "name": "D. Solanke",
+    "position": "ST",
+    "number": "19",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_1129",
+    "name": "A. Bardakcı",
+    "position": "CB",
+    "number": "42",
+    "team": "Türkiye",
+    "rating": 80
+  },
+  {
+    "id": "p_1461",
+    "name": "Pau Torres",
+    "position": "CB",
+    "number": "14",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_1528",
+    "name": "Riqui Puig",
+    "position": "CM",
+    "number": "10",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_1543",
+    "name": "Álvaro García",
+    "position": "LM",
+    "number": "18",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_1557",
+    "name": "Evanilson",
+    "position": "ST",
+    "number": "9",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_1580",
+    "name": "J. Sancho",
+    "position": "LM",
+    "number": "19",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_1156",
+    "name": "Borja Iglesias",
+    "position": "ST",
+    "number": "7",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_1152",
+    "name": "N. Jackson",
+    "position": "ST",
+    "number": "11",
+    "team": "Senegal",
+    "rating": 80
+  },
+  {
+    "id": "p_1187",
+    "name": "A. Wan-Bissaka",
+    "position": "RB",
+    "number": "29",
+    "team": "Congo DR",
+    "rating": 80
+  },
+  {
+    "id": "p_16990",
+    "name": "Bento",
+    "position": "GK",
+    "number": "24",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_16989",
+    "name": "P. Rajković",
+    "position": "GK",
+    "number": "1",
+    "team": "Serbia",
+    "rating": 80
+  },
+  {
+    "id": "p_248",
+    "name": "C. Jones",
+    "position": "CAM",
+    "number": "17",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_5711",
+    "name": "A. Christensen",
+    "position": "CB",
+    "number": "15",
+    "team": "Denmark",
+    "rating": 80
+  },
+  {
+    "id": "p_5301",
+    "name": "O. Kossounou",
+    "position": "CB",
+    "number": "3",
+    "team": "Côte d'Ivoire",
+    "rating": 80
+  },
+  {
+    "id": "p_538",
+    "name": "V. Castellanos",
+    "position": "ST",
+    "number": "11",
+    "team": "Argentina",
+    "rating": 80
+  },
+  {
+    "id": "p_530",
+    "name": "K. Fortounis",
+    "position": "CAM",
+    "number": "10",
+    "team": "Greece",
+    "rating": 80
+  },
+  {
+    "id": "p_1248",
+    "name": "K. Aktürkoğlu",
+    "position": "LW",
+    "number": "9",
+    "team": "Türkiye",
+    "rating": 80
+  },
+  {
+    "id": "p_1278",
+    "name": "J. Schouten",
+    "position": "CDM",
+    "number": "22",
+    "team": "Netherlands",
+    "rating": 80
+  },
+  {
+    "id": "p_287",
+    "name": "L. Hall",
+    "position": "LB",
+    "number": "3",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_6228",
+    "name": "C. Smalling",
+    "position": "CB",
+    "number": "5",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_5877",
+    "name": "Alexsandro",
+    "position": "CB",
+    "number": "4",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_251",
+    "name": "Ruiz de Galarreta",
+    "position": "CDM",
+    "number": "16",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_249",
+    "name": "M. Pašalić",
+    "position": "CM",
+    "number": "8",
+    "team": "Croatia",
+    "rating": 80
+  },
+  {
+    "id": "p_519",
+    "name": "Gabriel Jesus",
+    "position": "ST",
+    "number": "9",
+    "team": "Brazil",
+    "rating": 80
+  },
+  {
+    "id": "p_514",
+    "name": "N. Lang",
+    "position": "LW",
+    "number": "70",
+    "team": "Netherlands",
+    "rating": 80
+  },
+  {
+    "id": "p_1371",
+    "name": "M. Akliouche",
+    "position": "RM",
+    "number": "11",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_16760",
+    "name": "F. Rønnow",
+    "position": "GK",
+    "number": "1",
+    "team": "Denmark",
+    "rating": 80
+  },
+  {
+    "id": "p_93",
+    "name": "Q. Timber",
+    "position": "CM",
+    "number": "8",
+    "team": "Netherlands",
+    "rating": 80
+  },
+  {
+    "id": "p_92",
+    "name": "M. De Cuyper",
+    "position": "LB",
+    "number": "29",
+    "team": "Belgium",
+    "rating": 80
+  },
+  {
+    "id": "p_50",
+    "name": "B. Yılmaz",
+    "position": "LM",
+    "number": "53",
+    "team": "Türkiye",
+    "rating": 80
+  },
+  {
+    "id": "p_49",
+    "name": "I. Bennacer",
+    "position": "CDM",
+    "number": "99",
+    "team": "Algeria",
+    "rating": 80
+  },
+  {
+    "id": "p_108",
+    "name": "M. Arambarri",
+    "position": "CM",
+    "number": "8",
+    "team": "Uruguay",
+    "rating": 80
+  },
+  {
+    "id": "p_66",
+    "name": "L. Pellegrini",
+    "position": "CAM",
+    "number": "7",
+    "team": "Italy",
+    "rating": 80
+  },
+  {
+    "id": "p_3876",
+    "name": "Diego Llorente",
+    "position": "CB",
+    "number": "3",
+    "team": "Spain",
+    "rating": 80
+  },
+  {
+    "id": "p_88",
+    "name": "R. Loftus-Cheek",
+    "position": "CM",
+    "number": "8",
+    "team": "England",
+    "rating": 80
+  },
+  {
+    "id": "p_83",
+    "name": "F. Aursnes",
+    "position": "CM",
+    "number": "8",
+    "team": "Norway",
+    "rating": 80
+  },
+  {
+    "id": "p_81",
+    "name": "F. Kessié",
+    "position": "CDM",
+    "number": "79",
+    "team": "Côte d'Ivoire",
+    "rating": 80
+  },
+  {
+    "id": "p_15578",
+    "name": "D. Livaković",
+    "position": "GK",
+    "number": "1",
+    "team": "Croatia",
+    "rating": 80
+  },
+  {
+    "id": "p_353",
+    "name": "N. Mazraoui",
+    "position": "RB",
+    "number": "3",
+    "team": "Morocco",
+    "rating": 80
+  },
+  {
+    "id": "p_15917",
+    "name": "B. Samba",
+    "position": "GK",
+    "number": "30",
+    "team": "France",
+    "rating": 80
+  },
+  {
+    "id": "p_387",
+    "name": "X. Schlager",
+    "position": "CDM",
+    "number": "24",
+    "team": "Austria",
+    "rating": 80
+  },
+  {
+    "id": "p_15785",
+    "name": "V. Milinković-Savić",
+    "position": "GK",
+    "number": "32",
+    "team": "Serbia",
+    "rating": 79
+  }
+]

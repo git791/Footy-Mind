@@ -1,0 +1,72 @@
+[
+  {
+    "id": "gegenpressing",
+    "title": "Gegenpressing",
+    "summary": "A tactical philosophy centered on immediately attempting to win back possession the moment it is lost, rather than falling back to regroup.",
+    "explanation": "Popularized by managers like Jürgen Klopp, Gegenpressing (counter-pressing) requires high stamina, intense work rates, and supreme tactical coordination. The goal is to press the opposition immediately after losing the ball, often high up the pitch, to force an error while the opponent is disorganized during their transition from defense to attack. It is highly effective not just as a defensive tool but as a primary playmaker.",
+    "color": "#E53935"
+  },
+  {
+    "id": "tiki_taka",
+    "title": "Tiki-Taka",
+    "summary": "A style of play characterized by short passing and movement, working the ball through various channels, and maintaining possession.",
+    "explanation": "Made famous by Pep Guardiola's Barcelona and the Spanish National Team, Tiki-Taka focuses on retaining the ball through intricate, rapid short passing. The philosophy relies on technical superiority, constant movement, and positional interchange to create spaces and pull the opposition out of shape. It defensively relies on keeping the ball away from the opponent.",
+    "color": "#1E88E5"
+  },
+  {
+    "id": "catenaccio",
+    "title": "Catenaccio",
+    "summary": "A tactical system in football with a strong emphasis on defense, heavily utilizing a sweeper (libero) to nullify opposing attacks.",
+    "explanation": "Originating in Italy and perfected by Helenio Herrera's Inter Milan in the 1960s, Catenaccio means 'door-bolt'. It features a highly organized, defensive setup designed to prevent goals at all costs. The system introduced the 'libero' or sweeper—a free defender behind the defensive line whose role is to sweep up loose balls and cover man-marking defenders. It focuses on frustrating the opponent and capitalizing on swift counter-attacks.",
+    "color": "#43A047"
+  },
+  {
+    "id": "total_football",
+    "title": "Total Football",
+    "summary": "A tactical theory where any outfield player can take over the role of any other player in a team.",
+    "explanation": "Pioneered by Rinus Michels and Johan Cruyff with Ajax and the Netherlands national team, Total Football requires players to be highly adaptable and technically proficient in multiple positions. When a player moves out of their position, another player immediately fills the gap, maintaining the team's structural shape. This fluid, attacking style demands high fitness levels and exceptional spatial awareness.",
+    "color": "#FB8C00"
+  },
+  {
+    "id": "kick_and_rush",
+    "title": "Kick and Rush (Route One)",
+    "summary": "A direct style of football that involves playing long balls forward to bypass the midfield and quickly reach the attackers.",
+    "explanation": "Often associated with traditional English football, Kick and Rush (or Route One) is highly direct and physical. Teams bypass intricate midfield buildup in favor of launching long passes towards a tall, strong center-forward (a target man) who can hold up play or flick the ball onto runners. It prioritizes getting the ball into the opponent's danger area as quickly as possible.",
+    "color": "#8E24AA"
+  },
+  {
+    "id": "parking_the_bus",
+    "title": "Parking the Bus",
+    "summary": "An ultra-defensive strategy where a team defends deep in their own half with almost all players behind the ball.",
+    "explanation": "Popularized by José Mourinho, 'Parking the Bus' involves defending with a compact, deep block to deny the opposition any space in the final third. The team effectively sacrifices possession and attacking intent in exchange for defensive solidity, hoping to secure a clean sheet or score a goal via a rare counter-attack or set-piece. It requires immense concentration and discipline.",
+    "color": "#757575"
+  },
+  {
+    "id": "jogo_bonito",
+    "title": "Jogo Bonito",
+    "summary": "An aesthetic philosophy emphasizing creativity, flair, and individual skill over rigid tactical discipline.",
+    "explanation": "Meaning 'The Beautiful Game' in Portuguese, Jogo Bonito is closely tied to Brazilian football culture. It prioritizes entertaining, expressive, and improvisational play. The philosophy values dribbling, trickery, and attacking freedom, relying heavily on the natural talent and spontaneity of the players rather than strict systemic constraints.",
+    "color": "#FDD835"
+  },
+  {
+    "id": "false_9",
+    "title": "False 9 System",
+    "summary": "An offensive setup utilizing a center forward who frequently drops deep into the midfield, creating tactical dilemmas for central defenders.",
+    "explanation": "Instead of staying high up the pitch as a traditional striker, a 'False 9' drops into the space between the opponent's midfield and defense. This pulls central defenders out of position, creating gaps for wingers or attacking midfielders to exploit. Lionel Messi famously played this role under Pep Guardiola, blending the qualities of a playmaker and a goalscorer.",
+    "color": "#00ACC1"
+  },
+  {
+    "id": "vertical_tiki_taka",
+    "title": "Vertical Tiki-Taka",
+    "summary": "An evolution of traditional Tiki-Taka that combines possession-based football with faster, more direct vertical passing.",
+    "explanation": "While retaining the core principles of short passing and possession, Vertical Tiki-Taka focuses on moving the ball forward more aggressively. Seen in teams managed by Maurizio Sarri ('Sarriball') or modern iterations of Guardiola's teams, it aims to break lines quickly rather than merely retaining possession horizontally, leading to a higher tempo attacking game.",
+    "color": "#D81B60"
+  },
+  {
+    "id": "vertical_catenaccio",
+    "title": "Vertical Catenaccio",
+    "summary": "A modern defensive approach that relies on solid defending combined with rapid, lethal vertical counter-attacks.",
+    "explanation": "Adapting the principles of classic Catenaccio for the modern era, teams employing this style maintain a highly organized defense but transition with blistering speed. Rather than just clearing the ball, they look for immediate, penetrating vertical passes to quick forwards once possession is won. Antonio Conte's systems often display elements of this highly structured yet explosive style.",
+    "color": "#3949AB"
+  }
+]
