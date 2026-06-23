@@ -68,5 +68,75 @@
     "summary": "A modern defensive approach that relies on solid defending combined with rapid, lethal vertical counter-attacks.",
     "explanation": "Adapting the principles of classic Catenaccio for the modern era, teams employing this style maintain a highly organized defense but transition with blistering speed. Rather than just clearing the ball, they look for immediate, penetrating vertical passes to quick forwards once possession is won. Antonio Conte's systems often display elements of this highly structured yet explosive style.",
     "color": "#3949AB"
+  },
+  {
+    "id": "juego_de_posicion",
+    "title": "Positional Play (Juego de Posición)",
+    "summary": "A highly structured attacking philosophy focusing on spatial occupation, creating numerical superiorities, and manipulating the opponent's defensive blocks.",
+    "explanation": "Popularized heavily by Pep Guardiola, Positional Play divides the pitch into specific zones. Players are required to occupy these zones systematically to ensure passing triangles and overloads are always present. The fundamental rule is that no more than three players occupy the same horizontal line and no more than two occupy the same vertical line. Responsibilities involve players constantly rotating to drag defenders out of position; for instance, inverted full-backs tucking into midfield to outnumber opponents centrally, while wingers stay wide to stretch the defensive line.",
+    "color": "#3498db"
+  },
+  {
+    "id": "relationism",
+    "title": "Relationism (Functional Play)",
+    "summary": "A modern South American-inspired philosophy rejecting rigid spatial zones in favor of dynamic, intuitive player relationships and close-proximity combinations.",
+    "explanation": "Spearheaded recently by managers like Fernando Diniz, Relationism is the antithesis of Positional Play. Instead of spacing out to stretch the opposition, players deliberately group together on one side of the pitch, creating intense localized overloads (often referred to as 'tilting'). Player responsibilities are highly fluid: defenders may step up into the attack, and attackers may drop deep. It relies heavily on technical synergy, one-touch passing, and rhythmic movement (toco y me voy) to break through defenses organically.",
+    "color": "#2ecc71"
+  },
+  {
+    "id": "murderball",
+    "title": "Bielsa-ball (Murderball)",
+    "summary": "An ultra-aggressive, high-intensity system defined by man-to-man marking all over the pitch and rapid, vertical attacking transitions.",
+    "explanation": "Devised by Marcelo Bielsa, this tactical setup typically utilizes a fluid 3-3-1-3 or 4-1-4-1. Defensively, it relies on strict, suffocating man-to-man marking, forcing the opposition into mistakes. Offensively, the responsibility shifts to relentless vertical running and off-the-ball movement. Full-backs overlap explosively, and midfielders make constant third-man runs into the box. It demands extreme physical conditioning from every player, as they are tasked with pressing their specific man incessantly and immediately sprinting forward upon recovering the ball.",
+    "color": "#e74c3c"
+  },
+  {
+    "id": "zona_mista",
+    "title": "Zona Mista (Mixed Zone)",
+    "summary": "An Italian tactical evolution merging Catenaccio's defensive solidity with the zonal marking systems of Total Football.",
+    "explanation": "Developed in Italy during the 1970s and 80s as a response to Total Football, Zona Mista blended man-marking with zonal defense. The system traditionally utilized a sweeper (libero) who had no marking duties and covered behind the defense. The remaining defenders and midfielders had a 'mixed' responsibility: they man-marked players in their specific zones but seamlessly handed off attackers to teammates when they left their designated area. It allowed for lethal counter-attacks while maintaining structural rigidity.",
+    "color": "#9b59b6"
+  },
+  {
+    "id": "wm_formation",
+    "title": "The W-M (3-2-2-3)",
+    "summary": "A historical, revolutionary formation created to balance attack and defense, essentially birthing modern center-backs.",
+    "explanation": "Invented by Herbert Chapman at Arsenal in the 1920s in response to a change in the offside rule. He dropped the central half-back from a 2-3-5 into the defensive line to create a solid three-man defense, marking the birth of the traditional center-back. The formation resembled a 'W' up front (two wingers, one striker, two inside forwards) and an 'M' at the back (three defenders, two half-backs). Player responsibilities became highly specialized, shifting football away from all-out attack towards tactical equilibrium.",
+    "color": "#e67e22"
+  },
+  {
+    "id": "sarriball",
+    "title": "Sarriball (Vertical Tiki-Taka)",
+    "summary": "A high-tempo, possession-based system relying on rapid, short, vertical passes to break lines rather than merely retaining the ball for control.",
+    "explanation": "Named after Maurizio Sarri, this philosophy typically operates out of a 4-3-3 formation. Unlike traditional Tiki-Taka, which uses horizontal possession to rest on the ball, Sarriball is characterized by fast, one-touch, vertical passing sequences designed to draw the opposition out. The focal point is a deeply deployed playmaker (Regista) who dictates the tempo and orchestrates the passing circuits. Attackers and advanced midfielders make rapid, synchronized movements to receive third-man passes, aiming to penetrate the opposition's box within seconds.",
+    "color": "#1abc9c"
+  },
+  {
+    "id": "strikerless",
+    "title": "Strikerless System",
+    "summary": "A tactical setup that entirely abandons a traditional focal point in attack, utilizing central attacking midfielders to overwhelm the opposition's defense.",
+    "explanation": "In a Strikerless system, no player occupies the traditional #9 position. Instead, multiple 'False 10s' or attacking midfielders operate between the opposition's defensive and midfield lines. The primary responsibility of these players is to overload the central zones, dragging opposition center-backs out of position because they have no direct opponent to mark. This creates gaps for dynamic wingers and aggressive central midfielders to exploit via late runs into the penalty area.",
+    "color": "#8e44ad"
+  },
+  {
+    "id": "route_one",
+    "title": "Route One (Direct Football)",
+    "summary": "A highly pragmatic, direct approach focusing on moving the ball from defense to attack as quickly as possible via long aerial passes.",
+    "explanation": "A traditional, no-nonsense English tactic often associated with managers like Charles Reep or Sam Allardyce. It bypasses the midfield entirely to minimize the risk of losing the ball in dangerous areas. Defenders and the goalkeeper are responsible for launching accurate long balls toward a physically imposing 'Target Man' striker. The Target Man is tasked with winning aerial duels to either score directly or flick the ball on to a faster striking partner. Second balls and aggressive pressing upon losing aerial duels are critical to the system's success.",
+    "color": "#7f8c8d"
+  },
+  {
+    "id": "jogo_bonito_2",
+    "title": "Jogo Bonito (The Beautiful Game)",
+    "summary": "A deeply cultural Brazilian philosophy prioritizing individual flair, creativity, improvisation, and attacking freedom over rigid tactical structure.",
+    "explanation": "While less of a strictly defined formation, Jogo Bonito is a fundamental tactical ideology that governed Brazilian football for decades, reaching its pinnacle in 1970. It relies heavily on extreme technical proficiency and the intrinsic creativity of the players. Responsibilities are heavily attacking-oriented, with full-backs acting almost as wingers and attackers encouraged to take on defenders using dribbling and flair. It values aesthetic beauty and expression, trusting that individual superiority and spontaneous combination play will dismantle structured defenses.",
+    "color": "#f1c40f"
+  },
+  {
+    "id": "the_pyramid",
+    "title": "The Pyramid (2-3-5)",
+    "summary": "The first standard formation in football history, emphasizing overwhelming attacking numbers with a front line of five players.",
+    "explanation": "Dominant from the 1890s to the 1920s, The Pyramid was structurally top-heavy. The two full-backs were solely responsible for defending and marking the opposition's wingers. The three half-backs were the engine room, required to win the ball back and feed the massive attacking line. The five forwards (two wingers, two inside forwards, and a center forward) were responsible for relentless attacking pressure. It represents the origins of football tactics, originating in an era where outscoring the opponent was the singular defensive strategy.",
+    "color": "#d35400"
   }
 ]

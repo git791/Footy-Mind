@@ -19,7 +19,8 @@ export async function getLiveFixtures(): Promise<Fixture[]> {
   }
 
   try {
-    const res = await fetch("https://v3.football.api-sports.io/fixtures?live=all", {
+    // League 1 is the World Cup. Use season 2026 (or 2022 if fallback)
+    const res = await fetch("https://v3.football.api-sports.io/fixtures?live=all&league=1", {
       headers: {
         "x-apisports-key": apiKey
       }
@@ -31,13 +32,7 @@ export async function getLiveFixtures(): Promise<Fixture[]> {
 
     const data = await res.json();
     if (data.response && data.response.length > 0) {
-      // Filter for World Cup matches and take the top 3
-      const worldCupMatches = data.response.filter((f: Fixture) => 
-        f.league.name.toLowerCase().includes("world cup") || 
-        f.league.name.toLowerCase().includes("fifa")
-      );
-      
-      return worldCupMatches.slice(0, 3) as Fixture[];
+      return data.response.slice(0, 3) as Fixture[];
     }
     
     // If no live matches, just return empty so UI handles it

@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, signInAnonymously, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile } from "firebase/auth";
+import { getAuth, signInAnonymously, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile, sendEmailVerification } from "firebase/auth";
 import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, Timestamp } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -51,6 +51,7 @@ export async function registerUser(email:string, pass:string, name:string) {
   }
   const cred = await createUserWithEmailAndPassword(auth, email, pass);
   await updateProfile(cred.user, { displayName: name });
+  await sendEmailVerification(cred.user);
   await setDoc(doc(db, "users", cred.user.uid), {
     name,
     xp: 0,
@@ -81,10 +82,18 @@ export async function getUserData(uid: string) {
   const d = await getDoc(doc(db, "users", uid));
   if (d.exists()) {
     const data = d.data();
+    
+    // Fetch predictions subcollection
+    const preds: Record<number, any> = {};
+    const predsSnap = await getDocs(collection(db, `users/${uid}/predictions`));
+    predsSnap.forEach(docSnap => {
+      preds[Number(docSnap.id)] = docSnap.data();
+    });
+
     return {
       xp: data.xp || 0,
       lastQuizDone: data.lastQuizDone || "",
-      predictions: data.predictions || {},
+      predictions: preds,
       name: data.name || "Fan",
       favTeams: data.favTeams || []
     };
@@ -118,13 +127,13 @@ export async function saveQuizCompletion(uid: string, dateStr: string) {
 
 export async function saveMatchPrediction(uid: string, fixtureId: number, prediction: { home: number, away: number }) {
   if (!db) {
-    mockStorage.predictions[fixtureId] = { ...prediction, predicted: true };
+    mockStorage.predictions[fixtureId] = { ...prediction, predicted: true, timestamp: new Date().toISOString() };
     return;
   }
-  await setDoc(doc(db, "users", uid), {
-    predictions: {
-      [fixtureId]: { ...prediction, predicted: true }
-    }
+  await setDoc(doc(db, `users/${uid}/predictions/${fixtureId}`), {
+    ...prediction,
+    predicted: true,
+    timestamp: new Date().toISOString()
   }, { merge: true });
 }
 
@@ -136,10 +145,9 @@ export async function updatePredictionResult(uid: string, fixtureId: number, isC
     }
     return;
   }
-  await setDoc(doc(db, "users", uid), {
-    predictions: {
-      [fixtureId]: { resultProcessed: true, correct: isCorrect }
-    }
+  await setDoc(doc(db, `users/${uid}/predictions/${fixtureId}`), {
+    resultProcessed: true,
+    correct: isCorrect
   }, { merge: true });
 }
 

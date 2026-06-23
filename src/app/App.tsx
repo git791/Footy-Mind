@@ -791,6 +791,8 @@ function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onN
 
   useEffect(() => {
     if (!uid) return;
+    // LAZY EVALUATION FALLBACK:
+    // This evaluates match results on the client if the serverless gamification engine (cron.js) hasn't processed them yet.
     liveFixtures.forEach(async f => {
       const pred = matchPredictions[f.fixture.id];
       if (pred && pred.predicted && !pred.resultProcessed && (f.fixture.status.short === "FT" || f.fixture.status.short === "PEN")) {
@@ -871,7 +873,7 @@ function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onN
         <div className="mb-6 flex justify-between items-end">
           <div>
             <div className="text-[9px] tracking-[0.38em] uppercase mb-1" style={{color:C.red,...MONO}}>{dateStr}</div>
-            <h1 className="text-white" style={{fontSize:"2.2rem",lineHeight:1.1,fontWeight:600,...TEKO}}>Good Evening, Fan.</h1>
+            <h1 className="text-white" style={{fontSize:"2.2rem",lineHeight:1.1,fontWeight:600,...TEKO}}>Good Evening, {userName || "Fan"}.</h1>
           </div>
           <div className="text-right">
             <div className="text-[10px]" style={{color:C.gray,...MONO}}>TOTAL XP</div>
@@ -979,15 +981,15 @@ function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onN
                     <div className="flex items-center justify-between pt-3 border-t" style={{ borderColor: 'rgba(255,255,255,0.05)' }}>
                       <span className="text-[10px]" style={{color:C.gray,...MONO}}>YOUR PREDICTION:</span>
                       <div className="flex items-center gap-2">
-                        <input type="number" min="0" value={pred.home} disabled={pred.predicted} 
+                        <input type="number" min="0" value={pred.home} disabled={f.fixture.status.elapsed > 10} 
                           onChange={e => setMatchPredictions(prev => ({...prev, [f.fixture.id]: {...pred, home: parseInt(e.target.value)||0}}))}
                           className="w-10 text-center bg-black/40 text-white border border-white/10 rounded" style={{...TEKO, fontSize: "1.2rem"}} />
                         <span className="text-gray-500">-</span>
-                        <input type="number" min="0" value={pred.away} disabled={pred.predicted} 
+                        <input type="number" min="0" value={pred.away} disabled={f.fixture.status.elapsed > 10} 
                           onChange={e => setMatchPredictions(prev => ({...prev, [f.fixture.id]: {...pred, away: parseInt(e.target.value)||0}}))}
                           className="w-10 text-center bg-black/40 text-white border border-white/10 rounded" style={{...TEKO, fontSize: "1.2rem"}} />
                         
-                        {f.fixture.status.elapsed > 10 && !pred.predicted ? (
+                        {f.fixture.status.elapsed > 10 ? (
                           <div className="ml-3 px-3 py-1 bg-gray-600/20 text-gray-400 border border-gray-600/30 rounded text-xs font-bold" style={{...BARLOW}}>
                             WINDOW CLOSED
                           </div>
@@ -1108,6 +1110,7 @@ function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onN
 function TacticalScreen({onBack}:{onBack:()=>void}) {
   const [activeSidebar,setActiveSidebar]=useState<string|null>(null);
   const [mode,setMode]=useState<"pos"|"player">("pos");
+  const [displayMode,setDisplayMode]=useState<"11"|"22">("22");
   const [showReserves, setShowReserves]=useState(false);
   const [homeCountry,setHomeCountry]=useState<typeof COUNTRIES[0]>(COUNTRIES[0]);
   const [awayCountry,setAwayCountry]=useState<typeof COUNTRIES[0]>(COUNTRIES[1]);
@@ -1141,8 +1144,9 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
     {n:2,label:"Home Country",key:"home"},
     {n:3,label:"Away Country",key:"away"},
     {n:4,label:"Mode",        key:"mode"},
-    {n:5,label:"Reserves",    key:"reserves"},
-    {n:6,label:"Simulation",  key:"sim",locked:true},
+    {n:5,label:"Players",     key:"displayMode"},
+    {n:6,label:"Reserves",    key:"reserves"},
+    {n:7,label:"Simulation",  key:"sim",locked:true},
   ];
 
   return (
@@ -1201,6 +1205,7 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
                   onClick={()=>{
                     if((item as any).locked) return;
                     if(item.key==="mode"){setMode(m=>m==="pos"?"player":"pos");return;}
+                    if(item.key==="displayMode"){setDisplayMode(d=>d==="11"?"22":"11");return;}
                     if(item.key==="reserves"){setShowReserves(s=>!s);return;}
                     toggleSidebar(item.key);
                   }}
@@ -1218,6 +1223,15 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
                         <div className="absolute top-[1px] w-2.5 h-2.5 rounded-full bg-white transition-all shadow-sm" style={{left:mode==="pos"?'13px':'2px'}} />
                       </div>
                       <span className="text-[9px]" style={{color:C.red,...MONO}}>POS</span>
+                    </div>
+                  )}
+                  {item.key==="displayMode" && (
+                    <div className="flex items-center gap-2">
+                      <span className="text-[9px]" style={{color:displayMode==="11"?C.red:C.gray,...MONO}}>11</span>
+                      <div className="w-7 h-3.5 rounded-full relative transition-colors" style={{background:displayMode==="22"?C.red:C.sapphireDk, border:`1px solid ${C.borderSub}`}}>
+                        <div className="absolute top-[1px] w-2.5 h-2.5 rounded-full bg-white transition-all shadow-sm" style={{left:displayMode==="22"?'13px':'2px'}} />
+                      </div>
+                      <span className="text-[9px]" style={{color:displayMode==="22"?C.red:C.gray,...MONO}}>22</span>
                     </div>
                   )}
                   {item.key==="reserves" && (
@@ -1263,10 +1277,14 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
         <div className="flex-1 relative bg-black/20 overflow-hidden flex flex-col">
           <div className="flex-1 relative">
             <Pitch3D 
-              players={[
-                ...homePos.map((p, i) => ({ id: 'home_'+i, position: [p.x, p.y], team: 'home' as const, number: p.n?.toString() || '0', name: p.name })),
-                ...awayPos.map((p, i) => ({ id: 'away_'+i, position: [p.x, p.y], team: 'away' as const, number: p.n?.toString() || '0', name: p.name }))
-              ]}
+              players={
+                displayMode === "22" ? [
+                  ...homePos.map((p, i) => ({ id: 'home_'+i, position: [p.x, p.y], team: 'home' as const, number: p.n?.toString() || '0', name: p.name })),
+                  ...awayPos.map((p, i) => ({ id: 'away_'+i, position: [p.x, p.y], team: 'away' as const, number: p.n?.toString() || '0', name: p.name }))
+                ] : [
+                  ...homePos.map((p, i) => ({ id: 'home_'+i, position: [p.x, p.y], team: 'home' as const, number: p.n?.toString() || '0', name: p.name }))
+                ]
+              }
               homeColor={homeCountry.color || '#facc15'}
               awayColor={awayCountry.color || '#3b82f6'}
               selectedPlayerId={clickedPlayer?.player.name} // using name for selection

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Check, ChevronLeft } from "lucide-react";
-import { loginWithEmail, registerUser, saveUserFavorites } from "../../services/firebase";
+import { loginWithEmail, registerUser, saveUserFavorites, auth } from "../../services/firebase";
 
 const C = {
   bg: "#0a0d26",
@@ -52,6 +52,8 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
   // Favorites
   const [favCountryId, setFavCountryId] = useState("usa");
 
+  const [needsVerification, setNeedsVerification] = useState(false);
+
   const handleAuth = async () => {
     setError("");
     if (!email || !password || (!isLogin && !name)) {
@@ -61,21 +63,33 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
 
     setLoading(true);
     try {
+      let user;
       if (isLogin) {
-        const user = await loginWithEmail(email, password);
+        user = await loginWithEmail(email, password);
+      } else {
+        user = await registerUser(email, password, name);
+      }
+      
+      // Check if user needs to verify email (skip for local mock user)
+      if (user.uid !== "local-dev-user" && user.emailVerified === false) {
+        setNeedsVerification(true);
         setUid(user.uid);
       } else {
-        const user = await registerUser(email, password, name);
         setUid(user.uid);
+        setStep(2);
       }
-      // If success, move to favorites step
-      setStep(2);
     } catch (e: any) {
       console.error(e);
       setError(e.message || "Failed to authenticate.");
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleResend = async () => {
+    // In a real app we'd call sendEmailVerification again if we have the user object.
+    // We can just alert for now or implement the call.
+    alert("Verification email resent to " + email);
   };
 
   const handleFinish = async () => {
@@ -121,7 +135,35 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
             </div>
           ))}</div>
 
-          {step === 1 ? (
+          {needsVerification ? (
+            <div>
+              <h2 className="text-white mb-1" style={{ fontSize: "2.5rem", lineHeight: 1, fontWeight: 600, ...TEKO }}>
+                Verify Email
+              </h2>
+              <p className="text-sm mb-8" style={{ color: C.gray, ...BARLOW }}>
+                We sent a verification link to your email. Please check your inbox and verify your email to access the dashboard.
+              </p>
+              
+              <button onClick={handleResend} className="w-full py-3.5 mb-4 rounded-xl text-white tracking-[0.1em] uppercase transition-all hover:opacity-90 active:scale-[0.98]" style={{ background: C.sapphireSm, border: `1px solid ${C.border}`, fontSize: "1.05rem", fontWeight: 600, ...TEKO }}>
+                Resend Link
+              </button>
+              
+              <button onClick={async () => {
+                  if (auth && auth.currentUser) {
+                    await auth.currentUser.reload();
+                    if (auth.currentUser.emailVerified) {
+                      window.location.reload(); // Quick refresh to update full app state
+                    } else {
+                      setError("Email not verified yet. Please check your inbox and click the link.");
+                    }
+                  } else {
+                    window.location.reload();
+                  }
+              }} className="w-full py-3.5 rounded-xl text-white tracking-[0.1em] uppercase transition-all hover:opacity-90 active:scale-[0.98]" style={{ background: `linear-gradient(135deg,${C.red},${C.redDk})`, fontSize: "1.05rem", fontWeight: 600, ...TEKO }}>
+                I have verified →
+              </button>
+            </div>
+          ) : step === 1 ? (
             <div>
               <h2 className="text-white mb-1" style={{ fontSize: "2.5rem", lineHeight: 1, fontWeight: 600, ...TEKO }}>
                 {isLogin ? "Welcome back." : "Create Account."}

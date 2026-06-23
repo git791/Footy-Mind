@@ -19,32 +19,20 @@ const TEKO = { fontFamily: "'Teko', sans-serif" };
 const MONO = { fontFamily: "'JetBrains Mono', monospace" };
 const BARLOW = { fontFamily: "'Barlow', sans-serif" };
 
-const GLOBAL_TACTICS = [
-  {
-    id: "gt_1",
-    title: "Tiki-Taka",
-    icon: <Activity size={20} color={C.white} />,
-    summary: "Short passing and movement, maintaining possession.",
-    explanation: "Tiki-taka is a style of play characterised by short passing and movement, working the ball through various channels, and maintaining possession. It relies heavily on team geometry, creating triangles to ensure the player on the ball always has at least two passing options. Defensively, it relies on a high press to win the ball back immediately after losing it.",
-    color: "#3b82f6"
-  },
-  {
-    id: "gt_2",
-    title: "Counter Attack",
-    icon: <Crosshair size={20} color={C.white} />,
-    summary: "Absorb pressure and strike quickly with pace.",
-    explanation: "A counter-attacking system invites the opponent to attack, absorbing pressure with a deep defensive line. Once the ball is won, the team transitions from defense to attack at lightning speed, exploiting the spaces left behind by the attacking opponent. It requires fast forwards and midfielders with exceptional long-passing abilities.",
-    color: "#ef4444"
-  },
-  {
-    id: "gt_3",
-    title: "Park the Bus",
-    icon: <Shield size={20} color={C.white} />,
-    summary: "Ultra-defensive structure to frustrate opponents.",
-    explanation: "Parking the bus refers to playing with almost all players behind the ball in a rigid, deeply organized defensive block. There is minimal attacking intent; the primary goal is not to concede. It's often used when protecting a narrow lead against a vastly superior opponent or when playing with a man down.",
-    color: "#10b981"
-  }
-];
+import philosophiesData from '../data/philosophies.json';
+
+// We'll map icons dynamically if needed, but for now we can just use the colored box
+// Or assign a default icon.
+const getIcon = (id: string, color: string) => {
+  if (id.includes('defend') || id.includes('park') || id.includes('catenaccio')) return <Shield size={20} color={C.white} />;
+  if (id.includes('attack') || id.includes('gegen') || id.includes('tiki')) return <Activity size={20} color={C.white} />;
+  return <Crosshair size={20} color={C.white} />;
+};
+
+const GLOBAL_TACTICS = philosophiesData.map(p => ({
+  ...p,
+  icon: getIcon(p.id, p.color)
+}));
 
 function generatePositions(title: string) {
   // Extract formation numbers like "4-3-3" from title e.g. "4-3-3 (Attacking)"
