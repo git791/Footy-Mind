@@ -2,6 +2,7 @@ fastapi
 uvicorn
 langchain-ibm
 langchain-groq
+langchain-community
 python-dotenv
 pydantic
 python-multipart
