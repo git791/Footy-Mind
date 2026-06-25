@@ -1,5 +1,9 @@
 fastapi
 uvicorn
 langchain-ibm
+langchain-groq
 python-dotenv
 pydantic
+python-multipart
+docling
+duckduckgo-search
