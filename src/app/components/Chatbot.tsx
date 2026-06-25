@@ -1,14 +1,46 @@
-import React, { useState } from 'react';
-import { MessageSquare, X, Send } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { MessageSquare, X, Send, Upload, FileText, Settings } from 'lucide-react';
 import { askChatbot } from '../../services/ai-quiz';
+import { SettingsModal } from '../../components/SettingsModal';
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [messages, setMessages] = useState<{role: 'user'|'bot', text: string}[]>([
     { role: 'bot', text: 'Hi! Ask me anything about the 2026 World Cup, football rules, or player stats.' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploading(true);
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+
+    try {
+      const res = await fetch(`${baseUrl}/upload`, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error('Upload failed');
+      await res.json();
+      setMessages(prev => [...prev, { role: 'bot', text: `Docling parsed **${file.name}**! I now have it in my memory. What do you want to know about it?` }]);
+    } catch (err) {
+      console.error(err);
+      setMessages(prev => [...prev, { role: 'bot', text: `Sorry, failed to upload or parse ${file.name}. Is the Python backend running?` }]);
+    } finally {
+      setUploading(false);
+      e.target.value = '';
+    }
+  };
 
   const handleSend = async (e?: React.FormEvent) => {
     e?.preventDefault();
@@ -36,9 +68,9 @@ export default function Chatbot() {
       {!isOpen && (
         <button 
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 w-14 h-14 bg-red-600 rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-transform z-50"
+          className="fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-transform z-50 overflow-hidden border-2 border-red-600 bg-[#0d1133]"
         >
-          <MessageSquare color="white" />
+          <img src="/chatbot.png" alt="Chatbot" className="w-full h-full object-cover" />
         </button>
       )}
 
@@ -47,9 +79,32 @@ export default function Chatbot() {
         <div className="fixed bottom-6 right-6 w-80 h-[450px] bg-[#0d1133] rounded-2xl border border-white/10 shadow-2xl flex flex-col z-50 overflow-hidden font-['Barlow']">
           <div className="flex items-center justify-between p-4 bg-red-600">
             <h3 className="text-white font-bold font-['Teko'] text-xl">Pitch IQ Assistant</h3>
-            <button onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white">
-              <X size={20} />
-            </button>
+            <div className="flex items-center gap-3">
+              <input 
+                type="file" 
+                accept=".pdf" 
+                className="hidden" 
+                ref={fileInputRef} 
+                onChange={handleFileUpload} 
+              />
+              <button 
+                onClick={() => fileInputRef.current?.click()} 
+                className="text-white/80 hover:text-white transition-colors relative" 
+                title="Upload PDF (Docling)"
+              >
+                {uploading ? (
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                ) : (
+                  <Upload size={18} />
+                )}
+              </button>
+              <button onClick={() => setIsSettingsOpen(true)} className="text-white/80 hover:text-white transition-colors" title="Settings">
+                <Settings size={18} />
+              </button>
+              <button onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white transition-colors">
+                <X size={20} />
+              </button>
+            </div>
           </div>
 
           <div className="flex-1 p-4 overflow-y-auto flex flex-col gap-3">
@@ -83,6 +138,9 @@ export default function Chatbot() {
           </form>
         </div>
       )}
+
+      {/* Settings Modal */}
+      <SettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
     </>
   );
 }

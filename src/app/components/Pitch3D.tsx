@@ -167,7 +167,7 @@ export function Pitch3D({
   };
 
   return (
-    <Canvas shadows camera={{ position: [0, 18, 18], fov: 40 }}>
+    <Canvas shadows camera={{ position: [0, 24, 24], fov: 50 }}>
       <color attach="background" args={["#0a1128"]} />
       
       <ambientLight intensity={0.6} />
@@ -184,12 +184,7 @@ export function Pitch3D({
         shadow-camera-bottom={-15}
       />
       
-      <OrbitControls 
-        minPolarAngle={0} 
-        maxPolarAngle={Math.PI / 2 - 0.1}
-        minDistance={5}
-        maxDistance={40}
-      />
+
 
       {/* The Pitch */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
@@ -246,7 +241,7 @@ export function Pitch3D({
         minPolarAngle={0} 
         maxPolarAngle={Math.PI / 2.1} 
         minDistance={5}
-        maxDistance={25}
+        maxDistance={45}
         enablePan={true}
       />
     </Canvas>

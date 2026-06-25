@@ -111,8 +111,36 @@ export async function getDailyQuiz(): Promise<QuizQuestion[]> {
   return newQuiz;
 }
 
-import { runLangflowGraph } from "./ibm-ai";
 
 export async function askChatbot(message: string): Promise<string> {
-  return await runLangflowGraph(`System: You must call web search to answer this prompt. Only respond if the query is about football. \n\nUser query: ${message}`);
+  // Use 127.0.0.1 instead of localhost to prevent IPv6 mapping issues on Windows
+  const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+
+  try {
+    const ibmApiKey = sessionStorage.getItem("ibmApiKey");
+    const ibmProjectId = sessionStorage.getItem("ibmProjectId");
+
+    const res = await fetch(`${baseUrl}/chat`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ 
+        message, 
+        ibm_api_key: ibmApiKey || null, 
+        ibm_project_id: ibmProjectId || null 
+      })
+    });
+
+    if (!res.ok) {
+      const errData = await res.json().catch(()=>({}));
+      return `Error from server: ${errData.detail || res.statusText}.`;
+    }
+
+    const data = await res.json();
+    return data.response;
+  } catch (error: any) {
+    console.error("Chatbot API error:", error);
+    return "Sorry, could not connect to the local Python backend. Make sure uvicorn is running!";
+  }
 }

@@ -87,9 +87,17 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
   };
 
   const handleResend = async () => {
-    // In a real app we'd call sendEmailVerification again if we have the user object.
-    // We can just alert for now or implement the call.
-    alert("Verification email resent to " + email);
+    if (auth.currentUser) {
+      try {
+        const { sendEmailVerification } = await import("firebase/auth");
+        await sendEmailVerification(auth.currentUser);
+        alert("Verification email resent to " + email + ". Please check your spam folder!");
+      } catch (err: any) {
+        setError(err.message || "Failed to resend email.");
+      }
+    } else {
+      setError("User not found. Please log in again.");
+    }
   };
 
   const handleFinish = async () => {

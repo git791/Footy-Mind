@@ -13,6 +13,7 @@ import Chatbot from "./components/Chatbot";
 import { AuthScreen } from "./components/AuthScreen";
 import wc2022Data from "../data/wc2022_stats.json";
 import PHILOSOPHIES from "../data/philosophies.json";
+import TACTICS from "../data/tactics.json";
 
 /* ─── Palette ────────────────────────────────────────────── */
 const C = {
@@ -292,7 +293,7 @@ const SQUAD_DATA: Record<string, TeamSquad> = {
 };
 
 /* ─── Tactical formation positions ──────────────────────── */
-const FORMATION_DATA: Record<string, { label: string; desc: string; positions: PosItem[] }> = {
+const BASE_FORMATIONS: Record<string, { label: string; desc: string; positions: PosItem[] }> = {
   "4-3-3": { label:"4-3-3", desc:"High pressing, possession-based football. Wingers provide width and cut inside, while the front three press relentlessly to win the ball high up the pitch.",
     positions:[
       {n:1,role:"GK", x:50,y:133},{n:2,role:"LB",  x:15,y:112},{n:3,role:"CB", x:36,y:108},{n:4,role:"CB",  x:64,y:108},{n:5,role:"RB",  x:85,y:112},
@@ -315,6 +316,65 @@ const FORMATION_DATA: Record<string, { label: string; desc: string; positions: P
       {n:10,role:"ST",x:36,y:44},{n:11,role:"ST",x:64,y:44},
     ]},
 };
+
+const generatePositions = (formStr: string): PosItem[] => {
+  const parts = formStr.split("-").map(Number);
+  const pos: PosItem[] = [{n:1, role:"GK", x:50, y:133}];
+  
+  const numLines = parts.length;
+  const yStart = 110;
+  const yEnd = 40;
+  const yStep = numLines > 1 ? (yStart - yEnd) / (numLines - 1) : 0;
+  
+  let playerN = 2;
+  
+  parts.forEach((count, lineIndex) => {
+    const currentY = yStart - (lineIndex * yStep);
+    
+    for (let i = 0; i < count; i++) {
+      let x = 50;
+      if (count > 1) {
+        if (count === 2) {
+          if (lineIndex > 1 && lineIndex < numLines - 1) {
+             // Advanced midfield pair (e.g. LAM/RAM in 4-2-2-2 or 3-2-2-3) -> push them wider into half spaces
+             x = i === 0 ? 25 : 75;
+          } else {
+             // First midfield pair (CDMs), Centre-Backs, and Strikers -> cluster centrally
+             x = i === 0 ? 35 : 65; 
+          }
+        } else if (count === 3 && lineIndex === numLines - 1) {
+          x = 25 + (i * 25); // Clustered front 3
+        } else {
+           const usableWidth = 80;
+           const step = usableWidth / (count - 1);
+           x = 10 + (i * step);
+        }
+      }
+      
+      let role = "PLY";
+      if (lineIndex === 0) role = "DEF";
+      else if (lineIndex === numLines - 1) role = "FWD";
+      else role = "MID";
+      
+      pos.push({n: playerN++, role, x: Math.round(x), y: Math.round(currentY)});
+    }
+  });
+  
+  return pos;
+};
+
+const FORMATION_DATA: Record<string, { label: string; desc: string; positions: PosItem[] }> = { ...BASE_FORMATIONS };
+
+TACTICS.forEach((t: any) => {
+  const formStr = t.title.split(" ")[0]; // Extract e.g. "3-1-4-2"
+  if (!FORMATION_DATA[formStr] && formStr.includes("-")) {
+    FORMATION_DATA[formStr] = {
+      label: formStr,
+      desc: t.explanation || "A dynamic tactical shape.",
+      positions: generatePositions(formStr)
+    };
+  }
+});
 
 /* ─── Country list for tactical screen ──────────────────── */
 const COUNTRIES = [
@@ -660,7 +720,7 @@ function LoginScreen({onContinue}:{onContinue:()=>void}) {
         <div className="absolute -right-20 top-10 w-72 h-72 rounded-full" style={{border:`44px solid ${C.red}12`,transform:"rotate(8deg)"}}/>
         <div className="absolute left-0 top-0 bottom-0 w-1" style={{background:`linear-gradient(to bottom,transparent,${C.red},transparent)`}}/>
         <div className="relative z-10 flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{background:C.red}}><span className="text-white text-sm font-bold" style={{...TEKO}}>FM</span></div>
+          <img src="/pfp.png" alt="Profile" className="w-9 h-9 rounded-full object-cover border border-white/20" />
           <span className="font-semibold tracking-[0.22em] text-sm uppercase" style={{color:"rgba(255,255,255,0.8)",...TEKO}}>Footy Mind</span>
         </div>
         <div className="relative z-10">
@@ -678,7 +738,7 @@ function LoginScreen({onContinue}:{onContinue:()=>void}) {
       <div className="flex-1 flex items-center justify-center px-6 py-10 overflow-y-auto" style={{background:C.bg}}>
         <div className="w-full max-w-[420px]">
           <div className="lg:hidden flex items-center gap-2 mb-8">
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{background:C.red}}><span className="text-white text-xs font-bold" style={{...TEKO}}>FM</span></div>
+            <img src="/pfp.png" alt="Profile" className="w-8 h-8 rounded-full object-cover border border-white/20" />
             <span className="text-sm font-semibold tracking-widest uppercase" style={{color:"rgba(255,255,255,0.8)",...TEKO}}>Footy Mind</span>
           </div>
           <div className="flex items-center gap-2 mb-8">{[1,2].map(s=>(
@@ -744,8 +804,16 @@ function LoginScreen({onContinue}:{onContinue:()=>void}) {
 function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onNavigateFanZone,onNavigateDictionary,onNavigatePhilosophies,onNavigateFormations}:{onNavigateRoster:()=>void;onNavigateTactical:()=>void;onToggleLegacy:()=>void;onNavigateFanZone:()=>void;onNavigateDictionary:()=>void;onNavigatePhilosophies:()=>void;onNavigateFormations:()=>void}) {
   const [selAnswer,setSelAnswer]=useState<number|null>(null);
   const [answered,setAnswered]=useState(false);
-  const [currentQ,setCurrentQ]=useState(() => parseInt(localStorage.getItem('quiz_currentQ') || '0'));
-  const [quizScore,setQuizScore]=useState(() => parseInt(localStorage.getItem('quiz_quizScore') || '0'));
+  const [currentQ,setCurrentQ]=useState(() => {
+    const d = localStorage.getItem('quiz_date');
+    const today = new Date().toISOString().split('T')[0];
+    return d === today ? parseInt(localStorage.getItem('quiz_currentQ') || '0') : 0;
+  });
+  const [quizScore,setQuizScore]=useState(() => {
+    const d = localStorage.getItem('quiz_date');
+    const today = new Date().toISOString().split('T')[0];
+    return d === today ? parseInt(localStorage.getItem('quiz_quizScore') || '0') : 0;
+  });
   const [quizDone,setQuizDone]=useState(false);
   const [proMode,setProMode]=useState(false);
   const [questions,setQuestions]=useState<any[]>([]);
@@ -811,6 +879,8 @@ function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onN
   }, [liveFixtures, matchPredictions, uid]);
 
   useEffect(() => {
+    const today = new Date().toISOString().split('T')[0];
+    localStorage.setItem('quiz_date', today);
     localStorage.setItem('quiz_currentQ', currentQ.toString());
     localStorage.setItem('quiz_quizScore', quizScore.toString());
   }, [currentQ, quizScore]);
@@ -843,7 +913,7 @@ function DashboardScreen({onNavigateRoster,onNavigateTactical,onToggleLegacy,onN
     <div className="min-h-screen" style={{background:C.bg,...BARLOW}}>
       <header className="sticky top-0 z-10 flex items-center justify-between px-5 py-3.5" style={{background:`rgba(13,16,51,0.96)`,backdropFilter:"blur(12px)",borderBottom:`1px solid ${C.borderSub}`}}>
         <div className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:C.red}}><span className="text-white text-xs font-bold" style={{...TEKO,letterSpacing:"0.04em"}}>FM</span></div>
+          <img src="/pfp.png" alt="Profile" className="w-7 h-7 rounded-full object-cover border border-white/20" />
           <span className="font-semibold tracking-[0.2em] text-sm uppercase" style={{color:"rgba(255,255,255,0.85)",...TEKO}}>Footy Mind</span>
         </div>
         <div className="flex items-center gap-2">
@@ -1140,13 +1210,14 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
   const handleAwayCountry=(c:typeof COUNTRIES[0])=>{setAwayCountry(c);setAwayFormation(SQUAD_DATA[c.id].defaultFormation);setActiveSidebar(null);};
 
   const sidebarItems=[
-    {n:1,label:"Formation",   key:"formation"},
-    {n:2,label:"Home Country",key:"home"},
-    {n:3,label:"Away Country",key:"away"},
-    {n:4,label:"Mode",        key:"mode"},
-    {n:5,label:"Players",     key:"displayMode"},
-    {n:6,label:"Reserves",    key:"reserves"},
-    {n:7,label:"Simulation",  key:"sim",locked:true},
+    {n:1,label:"Home Formation",key:"homeFormation"},
+    {n:2,label:"Away Formation",key:"awayFormation"},
+    {n:3,label:"Home Country",  key:"home"},
+    {n:4,label:"Away Country",  key:"away"},
+    {n:5,label:"Mode",          key:"mode"},
+    {n:6,label:"Players",       key:"displayMode"},
+    {n:7,label:"Reserves",      key:"reserves"},
+    {n:8,label:"Simulation",    key:"sim",locked:true},
   ];
 
   return (
@@ -1156,7 +1227,7 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
         <div className="flex items-center gap-2.5">
           <button onClick={onBack} className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-white/5 transition-colors" style={{border:`1px solid ${C.border}`}}><ChevronLeft size={15} style={{color:C.gray}}/></button>
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{background:C.red}}><span className="text-white text-xs font-bold" style={{...TEKO}}>FM</span></div>
+            <img src="/pfp.png" alt="Profile" className="w-7 h-7 rounded-full object-cover border border-white/20" />
             <span className="font-semibold tracking-[0.2em] text-sm uppercase" style={{color:"rgba(255,255,255,0.85)",...TEKO}}>Footy Mind</span>
           </div>
           <div className="hidden sm:flex items-center gap-2 ml-1">
@@ -1342,7 +1413,7 @@ function TacticalScreen({onBack}:{onBack:()=>void}) {
           tactical: cp.note || "A reliable presence on the pitch.",
           watch: "Overall contribution to the team's shape."
         };
-        if (mode === "pos") {
+        if (mode === "pos" && cp.slotRole) {
           return <TacticalPlayerModal player={cp} teamColor={cTeam.color || "#000"} teamFlag={cTeam.flag} teamName={cTeam.name} onClose={()=>setClickedPlayer(null)} />;
         }
         return <PlayerModal player={playerProp} onClose={()=>setClickedPlayer(null)} />;
@@ -1418,7 +1489,7 @@ function PhilosophiesScreen({onBack}:{onBack:()=>void}) {
         <div className="relative z-10 flex items-center justify-between">
           <button onClick={onBack} className="w-9 h-9 rounded-full flex items-center justify-center transition-colors" style={{background:"rgba(255,255,255,0.05)",border:`1px solid ${C.border}`}}><ChevronLeft size={18} style={{color:C.gray}}/></button>
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded flex items-center justify-center" style={{background:C.red}}><span className="text-white text-xs font-bold" style={{...TEKO}}>FM</span></div>
+            <img src="/pfp.png" alt="Profile" className="w-8 h-8 rounded-full object-cover border border-white/20" />
           </div>
         </div>
         <div className="relative z-10 mt-6">
@@ -1468,7 +1539,7 @@ function PhilosophiesScreen({onBack}:{onBack:()=>void}) {
 }
 
 export default function App() {
-  const [screen,setScreen]=useState<Screen | "fanzone_legacy">("login");
+  const [screen,setScreen]=useState<Screen | "fanzone_legacy">("dashboard");
   const [legacyMode,setLegacyMode]=useState(false);
 
   useEffect(() => {
@@ -1477,8 +1548,12 @@ export default function App() {
       if (!user || user.uid === "") {
         setScreen("login");
       } else {
-        // If logged in, skip auth
-        if (screen === "login") setScreen("dashboard");
+        // If logged in AND verified (or a mock user), skip auth
+        if (screen === "login") {
+          if (user.emailVerified || user.uid === "local-dev-user") {
+            setScreen("dashboard");
+          }
+        }
       }
     });
     return () => unsub();
