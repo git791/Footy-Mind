@@ -12,7 +12,7 @@ interface BallState {
   x: number; y: number; vx: number; vy: number; radius: number;
 }
 
-export default function BobbleheadGame() {
+export default function BobbleheadGame({ onAddXP }: { onAddXP?: (xp: number) => void }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [scores, setScores] = useState({ p1: 0, p2: 0 });
   const [gameOver, setGameOver] = useState(false);
@@ -174,6 +174,16 @@ export default function BobbleheadGame() {
       
       // Check Win
       if (state.p1.score >= 5 || state.p2.score >= 5) {
+        if (state.p1.score >= 5 && onAddXP) {
+          const today = new Date().toDateString();
+          const limitKey = `bobblehead_xp_limit_${today}`;
+          const currentDailyXP = parseInt(localStorage.getItem(limitKey) || '0');
+          if (currentDailyXP < 1000) {
+            const xpToGive = Math.min(100, 1000 - currentDailyXP);
+            localStorage.setItem(limitKey, (currentDailyXP + xpToGive).toString());
+            onAddXP(xpToGive);
+          }
+        }
         setGameOver(true);
       }
     };
@@ -258,9 +268,15 @@ export default function BobbleheadGame() {
         
         {gameOver && (
           <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center">
-            <h2 className="text-6xl text-white font-bold mb-4" style={TEKO}>
+            <h2 className="text-6xl text-white font-bold mb-2" style={TEKO}>
               {scores.p1 >= 5 ? "YOU WIN!" : "AI WINS!"}
             </h2>
+            {scores.p1 >= 5 && (
+              <div className="text-green-400 font-bold mb-6 flex items-center gap-2" style={BARLOW}>
+                <span className="text-2xl">+100 XP</span>
+                <span className="text-sm opacity-70">(Daily limit: 1000 XP)</span>
+              </div>
+            )}
             <button 
               onClick={() => {
                 gameState.current.p1.score = 0;

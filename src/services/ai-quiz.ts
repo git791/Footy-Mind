@@ -114,7 +114,8 @@ export async function getDailyQuiz(): Promise<QuizQuestion[]> {
 
 export async function askChatbot(message: string): Promise<string> {
   // Use 127.0.0.1 instead of localhost to prevent IPv6 mapping issues on Windows
-  const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+  const rawUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+  const baseUrl = rawUrl.replace(/\/+$/, '');
 
   try {
     const ibmApiKey = sessionStorage.getItem("ibmApiKey");

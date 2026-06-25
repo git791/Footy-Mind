@@ -238,7 +238,7 @@ const GAMES = [
   
 ];
 
-export default function FanZoneScreen({ onBack, theme }: { onBack: () => void, theme: { mode: "2026"|"2022", C: any } }) {
+export default function FanZoneScreen({ onBack, theme, onAddXP }: { onBack: () => void, theme: { mode: "2026"|"2022", C: any }, onAddXP?: (amt:number)=>void }) {
   const [activeGame, setActiveGame] = useState(0);
   const C = theme.C;
   const is2022 = theme.mode === "2022";
@@ -289,7 +289,7 @@ export default function FanZoneScreen({ onBack, theme }: { onBack: () => void, t
         {activeGame === 0 && <GroupPredictor C={C} />}
         {activeGame === 1 && <PenaltyShootout C={C} />}
         {activeGame === 2 && <BobbleheadArena C={C} />}
-        {activeGame === 3 && <PongSoccer C={C} />}
+        {activeGame === 3 && <PongSoccer C={C} onAddXP={onAddXP} />}
         
       </main>
     </div>

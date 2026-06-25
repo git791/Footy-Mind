@@ -568,7 +568,7 @@ export function BobbleheadArena({ C }: { C: any }) {
   );
 }
 
-export function PongSoccer({ C }: { C: any }) {
+export function PongSoccer({ C, onAddXP }: { C: any, onAddXP?: (amt:number)=>void }) {
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const [running, setRunning] = React.useState(false);
   const [score, setScore] = React.useState({ p1: 0, p2: 0 });
@@ -614,7 +614,7 @@ export function PongSoccer({ C }: { C: any }) {
     let lastTime = performance.now();
 
     const loop = (time: number) => {
-      const dt = (time - lastTime) / 1000;
+      const dt = Math.min((time - lastTime) / 1000, 0.05);
       lastTime = time;
       const s = sRef.current;
 
@@ -636,10 +636,30 @@ export function PongSoccer({ C }: { C: any }) {
 
       // Goal
       if (s.ball.x < 0) {
-        setScore(sc => ({ ...sc, p2: sc.p2 + 1 }));
+        setScore(sc => {
+          const newP2 = sc.p2 + 1;
+          if (newP2 >= 10) setRunning(false);
+          return { ...sc, p2: newP2 };
+        });
         s.ball = { x: 400, y: 200, vx: 300, vy: (Math.random() - 0.5) * 400 };
       } else if (s.ball.x > 800) {
-        setScore(sc => ({ ...sc, p1: sc.p1 + 1 }));
+        setScore(sc => {
+          const newP1 = sc.p1 + 1;
+          if (newP1 >= 10) {
+            setRunning(false);
+            if (onAddXP) {
+              const today = new Date().toDateString();
+              const limitKey = `pong_xp_limit_${today}`;
+              const currentDailyXP = parseInt(localStorage.getItem(limitKey) || '0');
+              if (currentDailyXP < 1000) {
+                const xpToGive = Math.min(100, 1000 - currentDailyXP);
+                localStorage.setItem(limitKey, (currentDailyXP + xpToGive).toString());
+                onAddXP(xpToGive);
+              }
+            }
+          }
+          return { ...sc, p1: newP1 };
+        });
         s.ball = { x: 400, y: 200, vx: -300, vy: (Math.random() - 0.5) * 400 };
       }
 
@@ -663,6 +683,7 @@ export function PongSoccer({ C }: { C: any }) {
       if (mode === "single") {
         if (s.ball.y > s.p2.y + 50) s.p2.y += 250 * dt;
         if (s.ball.y < s.p2.y + 50) s.p2.y -= 250 * dt;
+        s.p2.y = Math.max(0, Math.min(300, s.p2.y));
       }
 
       // Draw
@@ -725,7 +746,29 @@ export function PongSoccer({ C }: { C: any }) {
           onPointerMove={handlePointerMove}
           style={{ width: "100%", maxWidth: 800, aspectRatio: "2/1", touchAction: "none", cursor: mode==="single"?"crosshair":"default" }} 
         />
-        {!running && (
+        {!running && (score.p1 >= 10 || score.p2 >= 10) ? (
+          <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center backdrop-blur-md">
+            <div style={{ fontSize:"4rem", color:"white", ...TEKO, fontWeight:"bold" }}>
+              {score.p1 >= 10 ? "YOU WIN!" : "AI WINS!"}
+            </div>
+            {score.p1 >= 10 && (
+              <div className="text-green-400 font-bold mb-6 flex items-center gap-2" style={BARLOW}>
+                <span className="text-2xl">+100 XP</span>
+                <span className="text-sm opacity-70">(Daily limit: 1000 XP)</span>
+              </div>
+            )}
+            <button 
+              onClick={() => {
+                setScore({ p1:0, p2:0 });
+                setRunning(true);
+              }}
+              className="px-6 py-3 rounded-full text-white font-bold tracking-wider transition-transform hover:scale-105 active:scale-95 shadow-lg mt-4"
+              style={{ background: C.red, ...TEKO, fontSize: "1.5rem" }}
+            >
+              PLAY AGAIN
+            </button>
+          </div>
+        ) : !running ? (
           <div className="absolute inset-0 bg-black/60 flex items-center justify-center backdrop-blur-sm">
             <button 
               onClick={() => setRunning(true)}
@@ -735,7 +778,7 @@ export function PongSoccer({ C }: { C: any }) {
               START MATCH
             </button>
           </div>
-        )}
+        ) : null}
       </div>
       {mode === "double" && (
         <div className="text-[10px] text-center opacity-60" style={{ ...MONO, color: C.gray }}>

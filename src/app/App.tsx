@@ -1579,12 +1579,12 @@ export default function App() {
       {screen==="dashboard" && <DashboardScreen onNavigateRoster={()=>setScreen("roster")} onNavigateTactical={()=>setScreen("tactical")} onToggleLegacy={()=>{setLegacyMode(true);setScreen("legacy");}} onNavigateFanZone={()=>setScreen("fanzone")} onNavigateDictionary={()=>setScreen("dictionary")} onNavigatePhilosophies={()=>setScreen("philosophies")} onNavigateFormations={()=>setScreen("formations")}/>}
       {screen==="roster"    && <RosterScreen   onBack={()=>setScreen("dashboard")}/>}
       {screen==="tactical"  && <TacticalScreen onBack={()=>setScreen("dashboard")}/>}
-      {screen==="fanzone"   && <FanZoneScreen  onBack={()=>setScreen("dashboard")} theme={{mode:"2026", C}}/>}
+      {screen==="fanzone"   && <FanZoneScreen  onBack={()=>setScreen("dashboard")} theme={{mode:"2026", C}} onAddXP={(amt: number) => setUserXP(x => x + amt)} />}
       {screen==="dictionary"&& <KeyTermsScreen onBack={()=>setScreen("dashboard")}/>}
       {screen==="formations"&& <FormationsScreen onBack={()=>setScreen("dashboard")}/>}
       
-      {/* Global Chatbot UI */}
-      <Chatbot />
+      {/* Global Chatbot UI (hidden on login screen) */}
+      {screen !== "login" && <Chatbot />}
     </div>
   );
 }
