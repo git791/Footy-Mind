@@ -7,4 +7,4 @@ python-dotenv
 pydantic
 python-multipart
 docling
-duckduckgo-search
+ddgs
