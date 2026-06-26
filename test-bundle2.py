@@ -1,0 +1,1 @@
+import urllib.request, re; req = urllib.request.Request('https://footy-mind.vercel.app/assets/index-DwWMZbcg.js', headers={'User-Agent': 'Mozilla/5.0'}); content = urllib.request.urlopen(req).read().decode('utf-8'); idx = content.find('addeloop'); print(content[max(0, idx-100):min(len(content), idx+200)])
