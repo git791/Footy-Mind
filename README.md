@@ -32,9 +32,10 @@ Powered by `React Three Fiber`, this fully interactive 3D pitch allows you to vi
 If you ask the Chatbot about future events (like the "2026 World Cup format"), it autonomously decides to use **DuckDuckGo** to search the live web. It reads the search results, synthesizes the facts, and replies with up-to-date information.
 
 **3. Fan Zone & Mini-Games**
-- Live Match Data: View simulated live fixtures and make score predictions.
-- Bobblehead Game: A fun, physics-based 2D canvas mini-game.
-- Football Dictionary & Philosophies: Explore the history of football tactics from *Gegenpressing* to *Tiki-Taka*.
+- **Group Predictor:** Build and predict your 2026 knockout bracket.
+- **Penalty Shootout:** A high-stakes mini-game where you try to beat the keeper.
+- **Bobblehead Arena:** A fun, physics-based arcade head-to-head game.
+- **Pong Soccer:** A football-themed twist on the classic paddle action game.
 
 **4. Bring Your Own Key (BYOK) via the Chatbox Gear Icon**
 Footy Mind is designed for flexibility. Click the **gear icon (⚙️)** in the chatbox to securely input your own **IBM WatsonX / Granite API Keys**. These keys are stored locally in your browser's session. If you don't have keys (or if they expire), the application seamlessly falls back to our robust IBM Granite 4-h model for inference so the experience never breaks!

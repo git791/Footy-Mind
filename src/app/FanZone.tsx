@@ -259,7 +259,7 @@ export default function FanZoneScreen({ onBack, theme, onAddXP }: { onBack: () =
         </div>
         <div style={{ display:"flex", alignItems:"center", gap:6 }}>
           <Zap size={13} style={{ color:C.red }}/>
-          <span style={{ color:C.red, fontSize:"0.68rem", fontWeight:700, ...MONO, letterSpacing:"0.1em" }}>5 GAMES</span>
+          <span style={{ color:C.red, fontSize:"0.68rem", fontWeight:700, ...MONO, letterSpacing:"0.1em" }}>4 GAMES</span>
         </div>
       </header>
 
