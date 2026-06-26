@@ -127,8 +127,8 @@ Create a `.env` file in the `backend` folder:
 ## 🚀 Deployment Recommendations
 
 1. **Frontend (Vercel):** Connect your GitHub repo to Vercel.
-2. **Backend (Render):** Connect your GitHub repo to Render as a "Web Service". Set Start Command to `uvicorn main:app --host 0.0.0.0 --port $PORT`.
+2. **Backend (Hugging Face Spaces):** Create a Docker Space on Hugging Face and deploy your backend there.
 
 ---
 
-*Built for the IBM SkillsBuild Hackathon by Mohammed Ayaan Adil Ahmed and Leana Gomez. Good luck!*
+*Built for the IBM SkillsBuild Hackathon by Mohammed Ayaan Adil Ahmed and Leana Gomez.*
