@@ -31,13 +31,22 @@ Powered by `React Three Fiber`, this fully interactive 3D pitch allows you to vi
 **2. Agentic Web Search**
 If you ask the Chatbot about future events (like the "2026 World Cup format"), it autonomously decides to use **DuckDuckGo** to search the live web. It reads the search results, synthesizes the facts, and replies with up-to-date information.
 
-**3. Fan Zone & Mini-Games**
+**3. Tactical Dictionary & Key Terms**
+Explore a comprehensive glossary of football tactics, key terms, and philosophies—understanding everything from *Gegenpressing* to *Tiki-Taka*.
+
+**4. Daily AI Football Quiz**
+Test your knowledge with a daily, AI-generated football quiz. Our application uses its intelligence to create unique questions every single day!
+
+**5. Fan Zone & Mini-Games**
 - **Group Predictor:** Build and predict your 2026 knockout bracket.
 - **Penalty Shootout:** A high-stakes mini-game where you try to beat the keeper.
 - **Bobblehead Arena:** A fun, physics-based arcade head-to-head game.
 - **Pong Soccer:** A football-themed twist on the classic paddle action game.
 
-**4. Bring Your Own Key (BYOK) via the Chatbox Gear Icon**
+**6. Live API Integrations (World Cup 2026 Ready)**
+Designed with the future in mind, Footy Mind is ready to plug into live football APIs to fetch real-time match data and statistics for the 2026 FIFA World Cup.
+
+**7. Bring Your Own Key (BYOK) via the Chatbox Gear Icon**
 Footy Mind is designed for flexibility. Click the **gear icon (⚙️)** in the chatbox to securely input your own **IBM WatsonX / Granite API Keys**. These keys are stored locally in your browser's session. If you don't have keys (or if they expire), the application seamlessly falls back to our robust IBM Granite 4-h model for inference so the experience never breaks!
 
 ---
