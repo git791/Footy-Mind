@@ -16,15 +16,17 @@ const FALLBACK_QUIZ: QuizQuestion[] = [
   { question:"Which player won the Golden Ball at the 2022 World Cup?", options:["Mbappé","Modrić","Messi","Martínez"], correct:2, explanation:"Lionel Messi won the Golden Ball in 2022." },
 ];
 
-export async function generateDailyQuiz(recentHashes: string[]): Promise<QuizQuestion[] | null> {
+export async function generateDailyQuiz(recentQuestions: string[]): Promise<QuizQuestion[] | null> {
   const graniteApiKey = import.meta.env.VITE_GRANITE_API_KEY || import.meta.env.VITE_GROQ_API_KEY;
   if (!graniteApiKey || graniteApiKey === "your_granite_api_key_here" || graniteApiKey === "your_groq_api_key_here") {
     console.warn("No Granite API Key. Using fallback.");
     return null;
   }
 
-  const dateStr = new Date("2026-06-23").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-  const excluded = recentHashes.length > 0 ? `Do NOT generate questions matching these recent question IDs/hashes: ${recentHashes.join(", ")}.` : "";
+  const dateStr = new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  const excluded = recentQuestions.length > 0 
+    ? `Do NOT generate questions that are identical or very similar to these previously used questions:\n- ${recentQuestions.join("\n- ")}`
+    : "";
 
   const systemPrompt = `You are a football trivia master with LIVE web-search access. Today is ${dateStr}. 
 Generate a 5-question multiple choice football quiz in strict JSON format. 
@@ -84,22 +86,42 @@ export async function getDailyQuiz(): Promise<QuizQuestion[]> {
     return mockStorage.quiz.questions;
   }
 
-  // If not found in DB, we need recent hashes for uniqueness
-  let recentHashes: string[] = [];
+  // Fetch recent questions to prevent duplicates
+  let recentQuestions: string[] = [];
   if (db) {
-    // We could fetch previous quizzes and hash their questions. For simplicity, mock it if not complex
-    recentHashes = ["q1_hash", "q2_hash"]; 
+    try {
+      const datesToFetch: string[] = [];
+      for (let i = 1; i <= 5; i++) {
+        const d = new Date();
+        d.setDate(d.getDate() - i);
+        datesToFetch.push(d.toISOString().split('T')[0]);
+      }
+      
+      const docs = await Promise.all(
+        datesToFetch.map(date => getDoc(doc(db, "daily_quizzes", date)))
+      );
+      
+      docs.forEach(docSnap => {
+        if (docSnap.exists()) {
+          const qs = docSnap.data().questions || [];
+          qs.forEach((q: any) => {
+            if (q && q.question) {
+              recentQuestions.push(q.question);
+            }
+          });
+        }
+      });
+    } catch (err) {
+      console.warn("Failed to fetch previous quizzes for deduplication:", err);
+    }
   }
 
   // Generate via Groq
-  let newQuiz = await generateDailyQuiz(recentHashes);
+  let newQuiz = await generateDailyQuiz(recentQuestions);
   
   if (!newQuiz) {
     newQuiz = FALLBACK_QUIZ; // Fallback
   }
-
-  // Local deduplication validation check
-  // (In a real app, we'd hash the new questions and check against db. For now, we trust the prompt constraints)
 
   // Save to DB so everyone gets the same daily quiz
   if (db) {

@@ -86,7 +86,7 @@ export default function Chatbot() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 w-80 h-[450px] bg-[#0d1133] rounded-2xl border border-white/10 shadow-2xl flex flex-col z-50 overflow-hidden font-['Barlow']">
           <div className="flex items-center justify-between p-4 bg-red-600">
-            <h3 className="text-white font-bold font-['Teko'] text-xl">Pitch IQ Assistant</h3>
+            <h3 className="text-white font-bold font-['Teko'] text-xl">Footy Mind Assistant</h3>
             <div className="flex items-center gap-3">
               <input 
                 type="file" 

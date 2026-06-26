@@ -1,5 +1,5 @@
 /**
- * PITCH IQ — Qatar 2022 Legacy Mode
+ * FOOTY MIND — Qatar 2022 Legacy Mode
  * Historical data architecture modelled after StatsBomb Open Data schema
  * Competition ID: 43 · Season ID: 106
  */
@@ -193,7 +193,7 @@ function LegacyNav({ screen, onScreen, onSwitch, onNavigateFanZone }:{
       <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", padding:"12px 20px"}}>
         {/* Brand */}
         <div>
-          <div style={{color:L.gold, fontSize:"1.35rem", fontWeight:700, letterSpacing:"0.08em", lineHeight:1, ...CI}}>PITCH IQ</div>
+          <div style={{color:L.gold, fontSize:"1.35rem", fontWeight:700, letterSpacing:"0.08em", lineHeight:1, ...CI}}>FOOTY MIND</div>
           <div style={{color:`${L.gold}60`, fontSize:"0.58rem", letterSpacing:"0.28em", marginTop:2, ...MO}}>QATAR 2022 · LEGACY MODE</div>
         </div>
         {/* Desktop tabs */}

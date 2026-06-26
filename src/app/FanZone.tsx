@@ -1,5 +1,5 @@
 /**
- * FanZone.tsx — Pitch IQ Mini-Game Hub
+ * FanZone.tsx — Footy Mind Mini-Game Hub
  * Three interactive games: Group Predictor · Penalty Shootout · Bobblehead Arena
  */
 
@@ -253,7 +253,7 @@ export default function FanZoneScreen({ onBack, theme, onAddXP }: { onBack: () =
           <div>
             <div style={{ color:C.white, fontSize:"1.35rem", fontWeight:600, ...TEKO, lineHeight:1 }}>Fan Zone</div>
             <div style={{ color:C.gray, fontSize:"0.6rem", letterSpacing:"0.2em", ...MONO }}>
-              {is2022 ? "QATAR 2022 LEGACY MINI-GAMES" : "PITCH IQ MINI-GAMES"}
+              {is2022 ? "QATAR 2022 LEGACY MINI-GAMES" : "FOOTY MIND MINI-GAMES"}
             </div>
           </div>
         </div>

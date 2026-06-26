@@ -114,8 +114,8 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
         <div className="absolute -right-20 top-10 w-72 h-72 rounded-full" style={{ border: `44px solid ${C.red}12`, transform: "rotate(8deg)" }} />
         <div className="absolute left-0 top-0 bottom-0 w-1" style={{ background: `linear-gradient(to bottom,transparent,${C.red},transparent)` }} />
         <div className="relative z-10 flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: C.red }}><span className="text-white text-sm font-bold" style={{ ...TEKO }}>PIQ</span></div>
-          <span className="font-semibold tracking-[0.22em] text-sm uppercase" style={{ color: "rgba(255,255,255,0.8)", ...TEKO }}>Pitch IQ</span>
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: C.red }}><span className="text-white text-sm font-bold" style={{ ...TEKO }}>FM</span></div>
+          <span className="font-semibold tracking-[0.22em] text-sm uppercase" style={{ color: "rgba(255,255,255,0.8)", ...TEKO }}>Footy Mind</span>
         </div>
         <div className="relative z-10">
           <div className="text-[10px] tracking-[0.38em] uppercase mb-5" style={{ color: C.red, ...MONO }}>FIFA World Cup 2026</div>
@@ -132,8 +132,8 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
       <div className="flex-1 flex items-center justify-center px-6 py-10 overflow-y-auto" style={{ background: C.bg }}>
         <div className="w-full max-w-[420px]">
           <div className="lg:hidden flex items-center gap-2 mb-8">
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: C.red }}><span className="text-white text-xs font-bold" style={{ ...TEKO }}>PIQ</span></div>
-            <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: "rgba(255,255,255,0.8)", ...TEKO }}>Pitch IQ</span>
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: C.red }}><span className="text-white text-xs font-bold" style={{ ...TEKO }}>FM</span></div>
+            <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: "rgba(255,255,255,0.8)", ...TEKO }}>Footy Mind</span>
           </div>
           
           <div className="flex items-center gap-2 mb-8">{[1, 2].map(s => (
@@ -177,7 +177,7 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
                 {isLogin ? "Welcome back." : "Create Account."}
               </h2>
               <p className="text-sm mb-8" style={{ color: C.gray, ...BARLOW }}>
-                {isLogin ? "Sign in to your Pitch IQ account" : "Join the ultimate football companion"}
+                {isLogin ? "Sign in to your Footy Mind account" : "Join the ultimate football companion"}
               </p>
 
               {error && <div className="mb-4 text-red-500 text-sm font-bold bg-red-500/10 p-3 rounded-lg border border-red-500/20">{error}</div>}
@@ -245,7 +245,7 @@ export function AuthScreen({ onContinue }: { onContinue: () => void }) {
                 </select>
               </div>
 
-              <button onClick={handleFinish} className="w-full py-3.5 rounded-xl text-white tracking-[0.1em] uppercase transition-all hover:opacity-90" style={{ background: `linear-gradient(135deg,${C.red},${C.redDk})`, fontSize: "1.05rem", fontWeight: 600, ...TEKO }}>Enter Pitch IQ →</button>
+              <button onClick={handleFinish} className="w-full py-3.5 rounded-xl text-white tracking-[0.1em] uppercase transition-all hover:opacity-90" style={{ background: `linear-gradient(135deg,${C.red},${C.redDk})`, fontSize: "1.05rem", fontWeight: 600, ...TEKO }}>Enter Footy Mind →</button>
               <div className="mt-4 text-center"><button onClick={onContinue} className="text-xs underline underline-offset-2 hover:text-white" style={{ color: "#777", ...BARLOW }}>Skip for now</button></div>
             </div>
           )}
