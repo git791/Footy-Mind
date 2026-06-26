@@ -22,7 +22,10 @@ export default function Chatbot() {
     const formData = new FormData();
     formData.append('file', file);
 
-    const rawUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+    let rawUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+    if (rawUrl && !rawUrl.startsWith('http')) {
+      rawUrl = 'https://' + rawUrl;
+    }
     const baseUrl = rawUrl.replace(/\/+$/, '');
 
     try {

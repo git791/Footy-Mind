@@ -1539,7 +1539,7 @@ function PhilosophiesScreen({onBack}:{onBack:()=>void}) {
 }
 
 export default function App() {
-  const [screen,setScreen]=useState<Screen | "fanzone_legacy">("dashboard");
+  const [screen,setScreen]=useState<Screen | "fanzone_legacy">("login");
   const [legacyMode,setLegacyMode]=useState(false);
 
   useEffect(() => {
