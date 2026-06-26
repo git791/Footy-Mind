@@ -23,10 +23,14 @@ export default function Chatbot() {
     formData.append('file', file);
 
     let rawUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
+    
+    // Clean up the URL: remove leading/trailing slashes and any trailing /upload
+    rawUrl = rawUrl.replace(/^\/+/, '').replace(/\/+$/, '').replace(/\/upload$/, '');
+    
     if (rawUrl && !rawUrl.startsWith('http')) {
       rawUrl = 'https://' + rawUrl;
     }
-    const baseUrl = rawUrl.replace(/\/+$/, '');
+    const baseUrl = rawUrl;
 
     try {
       const res = await fetch(`${baseUrl}/upload`, {
