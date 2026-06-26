@@ -36,8 +36,8 @@ If you ask the Chatbot about future events (like the "2026 World Cup format"), i
 - Bobblehead Game: A fun, physics-based 2D canvas mini-game.
 - Football Dictionary & Philosophies: Explore the history of football tactics from *Gegenpressing* to *Tiki-Taka*.
 
-**4. Bring Your Own Key (BYOK)**
-Footy Mind is designed for flexibility. Securely input your **IBM WatsonX API Keys**. If you don't have them (or if they expire), the backend seamlessly falls back to the IBM Granite 4-h model for inference!
+**4. Bring Your Own Key (BYOK) via the Chatbox Gear Icon**
+Footy Mind is designed for flexibility. Click the **gear icon (⚙️)** in the chatbox to securely input your own **IBM WatsonX / Granite API Keys**. These keys are stored locally in your browser's session. If you don't have keys (or if they expire), the application seamlessly falls back to our robust IBM Granite 4-h model for inference so the experience never breaks!
 
 ---
 
