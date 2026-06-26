@@ -70,8 +70,8 @@ async def upload_document(file: UploadFile = File(...)):
 
 @app.post("/chat")
 async def chat_endpoint(body: ChatRequest):
-    # Try to get Groq key from environment
-    groq_api_key = os.getenv("VITE_GROQ_API_KEY")
+    # Try to get Granite key from environment (fallback to Groq)
+    granite_api_key = os.getenv("VITE_GRANITE_API_KEY") or os.getenv("VITE_GROQ_API_KEY")
 
     try:
         llm = None
@@ -95,22 +95,22 @@ async def chat_endpoint(body: ChatRequest):
                 llm.invoke("test")
                 print("Successfully initialized IBM WatsonX!")
             except Exception as e:
-                print(f"Failed to use WatsonX (falling back to Groq): {str(e)}")
+                print(f"Failed to use WatsonX (falling back to Granite): {str(e)}")
                 llm = None
                 
-        # 2. Fallback to Groq if WatsonX failed or no keys provided
+        # 2. Fallback to Granite if WatsonX failed or no keys provided
         if not llm:
-            if not groq_api_key or groq_api_key == "your_groq_api_key_here":
-                raise HTTPException(status_code=401, detail="IBM Keys failed and Groq API Key is missing! Please check your .env file.")
+            if not granite_api_key or granite_api_key == "your_granite_api_key_here" or granite_api_key == "your_groq_api_key_here":
+                raise HTTPException(status_code=401, detail="IBM Keys failed and Granite API Key is missing! Please check your .env file.")
                 
             from langchain_groq import ChatGroq
             llm = ChatGroq(
                 model="llama-3.3-70b-versatile",
-                api_key=groq_api_key,
+                api_key=granite_api_key,
                 temperature=0.2,
                 max_tokens=1000
             )
-            print("Successfully initialized Groq Llama!")
+            print("Successfully initialized Granite fallback model!")
         
         system_prompt = f"""You are the Footy Mind AI assistant, an expert in football (soccer). 
 CRITICAL RULES:
@@ -163,7 +163,7 @@ Be concise and engaging."""
         return {"response": ai_msg.content.strip()}
         
     except Exception as e:
-        print(f"Error calling Groq: {str(e)}")
+        print(f"Error calling Granite model: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

@@ -17,9 +17,9 @@ const FALLBACK_QUIZ: QuizQuestion[] = [
 ];
 
 export async function generateDailyQuiz(recentHashes: string[]): Promise<QuizQuestion[] | null> {
-  const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
-  if (!groqApiKey || groqApiKey === "your_groq_api_key_here") {
-    console.warn("No Groq API Key. Using fallback.");
+  const graniteApiKey = import.meta.env.VITE_GRANITE_API_KEY || import.meta.env.VITE_GROQ_API_KEY;
+  if (!graniteApiKey || graniteApiKey === "your_granite_api_key_here" || graniteApiKey === "your_groq_api_key_here") {
+    console.warn("No Granite API Key. Using fallback.");
     return null;
   }
 
@@ -41,7 +41,7 @@ You must return ONLY a JSON array of 5 objects. Each object must have:
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${groqApiKey}`
+        "Authorization": `Bearer ${graniteApiKey}`
       },
       body: JSON.stringify({
         model: "llama3-70b-8192", // Base model. If compound is available, replace with "groq/compound"
@@ -54,7 +54,7 @@ You must return ONLY a JSON array of 5 objects. Each object must have:
       })
     });
 
-    if (!response.ok) throw new Error(`Groq API error: ${response.status}`);
+    if (!response.ok) throw new Error(`Granite API error: ${response.status}`);
     const data = await response.json();
     let content = data.choices[0].message.content;
     

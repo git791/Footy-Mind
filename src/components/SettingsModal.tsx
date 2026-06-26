@@ -42,7 +42,7 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
         {/* Body */}
         <div className="p-6">
           <p className="text-sm text-gray-300 mb-6 leading-relaxed">
-            Provide your IBM WatsonX credentials below to power the AI Assistant. These keys are <strong className="text-white">securely stored in your browser's temporary session</strong> and will be deleted as soon as you close the tab. If these keys are invalid or empty, the assistant will seamlessly fallback to our Groq Llama 70B model.
+            Provide your IBM WatsonX credentials below to power the AI Assistant. These keys are <strong className="text-white">securely stored in your browser's temporary session</strong> and will be deleted as soon as you close the tab. If these keys are invalid or empty, the assistant will seamlessly fallback to our Granite model.
           </p>
 
           <form onSubmit={handleSave} className="space-y-4">
